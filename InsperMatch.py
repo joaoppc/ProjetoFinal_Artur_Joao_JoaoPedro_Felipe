@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'InsperMatch.ui'
 #
-# Created: Wed May 27 14:29:57 2015
+# Created: Thu May 28 13:42:22 2015
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -70,6 +70,8 @@ class Ui_Form(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.dateEdit.setFont(font)
+        self.dateEdit.setTimeSpec(QtCore.Qt.LocalTime)
+        self.dateEdit.setDate(QtCore.QDate(2000, 1, 1))
         self.dateEdit.setObjectName(_fromUtf8("dateEdit"))
         self.horizontalLayout_2.addWidget(self.dateEdit)
         self.horizontalLayoutWidget_3 = QtGui.QWidget(Form)
