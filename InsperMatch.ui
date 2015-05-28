@@ -1,26 +1,448 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>InsperMatch</class>
+ <widget class="QWidget" name="InsperMatch">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>561</width>
-    <height>693</height>
+    <width>1097</width>
+    <height>561</height>
    </rect>
   </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>212</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>113</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>212</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>212</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>113</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>212</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>212</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>113</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>InperMatch</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Pictures/raposa atlética.jpg</normaloff>../../../Pictures/raposa atlética.jpg</iconset>
   </property>
   <widget class="QMdiArea" name="mdiArea">
    <property name="geometry">
     <rect>
-     <x>410</x>
+     <x>940</x>
      <y>10</y>
      <width>131</width>
      <height>151</height>
     </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
    </property>
   </widget>
   <widget class="QWidget" name="horizontalLayoutWidget">
@@ -100,6 +522,16 @@
         <pointsize>12</pointsize>
        </font>
       </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>1990</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
      </widget>
     </item>
    </layout>
@@ -109,8 +541,8 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>371</width>
-     <height>31</height>
+     <width>601</width>
+     <height>41</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -130,7 +562,7 @@
      <widget class="QTextEdit" name="textEdit">
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <pointsize>16</pointsize>
        </font>
       </property>
      </widget>
@@ -172,408 +604,11 @@
     </property>
    </item>
   </widget>
-  <widget class="QGroupBox" name="groupBox">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>180</y>
-     <width>501</width>
-     <height>401</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Características</string>
-   </property>
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>30</y>
-      <width>101</width>
-      <height>361</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QCheckBox" name="checkBox_3">
-       <property name="text">
-        <string>Futebol</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_6">
-       <property name="text">
-        <string>Rugby</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_8">
-       <property name="text">
-        <string>Volei</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_9">
-       <property name="text">
-        <string>Handebol</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_11">
-       <property name="text">
-        <string>Futsal</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_12">
-       <property name="text">
-        <string>Xadrez</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_10">
-       <property name="text">
-        <string>Tênis de Mesa</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_7">
-       <property name="text">
-        <string>Jiu-Jitsu</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_5">
-       <property name="text">
-        <string>Tênis</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_4">
-       <property name="text">
-        <string>Natação</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_2">
-       <property name="text">
-        <string>Basquete</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox">
-       <property name="text">
-        <string>Surf</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>30</y>
-      <width>109</width>
-      <height>361</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <item>
-      <widget class="QCheckBox" name="checkBox_13">
-       <property name="text">
-        <string>Batata frita</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_14">
-       <property name="text">
-        <string>Donuts</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_15">
-       <property name="text">
-        <string>Lasanha</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_16">
-       <property name="text">
-        <string>Comida Japonesa</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_17">
-       <property name="text">
-        <string>Pizza</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_18">
-       <property name="text">
-        <string>Esfiha</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_19">
-       <property name="text">
-        <string>Feijoada</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_20">
-       <property name="text">
-        <string>Cachorro-Quente</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_21">
-       <property name="text">
-        <string>Risotto</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_22">
-       <property name="text">
-        <string>Churrasco</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_23">
-       <property name="text">
-        <string>Macarrão</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_24">
-       <property name="text">
-        <string>Hamburger</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_3">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>30</y>
-      <width>101</width>
-      <height>361</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <widget class="QCheckBox" name="checkBox_25">
-       <property name="text">
-        <string>Balada</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_26">
-       <property name="text">
-        <string>Cervejada</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_27">
-       <property name="text">
-        <string>Bar</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_28">
-       <property name="text">
-        <string>Cinema</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_29">
-       <property name="text">
-        <string>Restaurante</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_30">
-       <property name="text">
-        <string>Casa Amigos</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_31">
-       <property name="text">
-        <string>Parque</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_32">
-       <property name="text">
-        <string>Livro</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_33">
-       <property name="text">
-        <string>Soneca</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_34">
-       <property name="text">
-        <string>Séries</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_35">
-       <property name="text">
-        <string>Facebook</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_36">
-       <property name="text">
-        <string>Shopping</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_4">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>30</y>
-      <width>101</width>
-      <height>361</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_5">
-     <item>
-      <widget class="QCheckBox" name="checkBox_37">
-       <property name="text">
-        <string>Violão</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_38">
-       <property name="text">
-        <string>Banjo</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_39">
-       <property name="text">
-        <string>Cavaquinho</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_40">
-       <property name="text">
-        <string>Bateria</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_41">
-       <property name="text">
-        <string>Flauta</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_42">
-       <property name="text">
-        <string>Piano</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_43">
-       <property name="text">
-        <string>Violino</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_44">
-       <property name="text">
-        <string>Baixo</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_45">
-       <property name="text">
-        <string>Saxofone</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_46">
-       <property name="text">
-        <string>Bongô</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_47">
-       <property name="text">
-        <string>Xilofone</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_48">
-       <property name="text">
-        <string>Pandeiro</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-  </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>600</y>
+     <y>510</y>
      <width>51</width>
      <height>21</height>
     </rect>
@@ -591,7 +626,7 @@
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>600</y>
+     <y>510</y>
      <width>181</width>
      <height>22</height>
     </rect>
@@ -603,26 +638,456 @@
    </property>
    <item>
     <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Água Rasa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Alto de Pinheiros</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Alphaville</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Anhanguera</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Aricanduva</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Artur Alvim</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Barra Funda</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bela Vista</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Belém</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bom Retiro</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Brasilândia</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Butantã</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cachoeirinha</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cambuci</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Campo Belo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Campo Grande</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Campo Limpo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cangaíba</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Capão Redondo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Carrão</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cidade Ademar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cidade Dutra</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cidade líder</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cidade Tiradentes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Consolação</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cursino</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Emerlino Matarazzo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Freguesia do Ó</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Grajaú</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Guaianases</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Iguatemi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ipiranga</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Itaim Bibi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Itaim Paulista</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Itaquera</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jabaquara</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jaçanã</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jaguará</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jardim Helena</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jardim Paulista</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jardim São Luís</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Lapa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Liberdade</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Limão</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mandaqui</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Marsilac</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Moema</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mooca</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>Morumbi</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>mooca</string>
+     <string>Parelheiros</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>moema</string>
+     <string>Pari</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Parque do Carmo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pedreira</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Penha</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Perdizes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pinheiros</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pirituba</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ponte Rasa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Raposo Tavares</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>República</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rio Pequeno</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sacomã</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Santa Cecília</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Santana</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Santo Amaro</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>São Domingos</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>São Lucas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>São Mateus</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>São Miguel Paulista</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>São Rafael</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sapopemba</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Saúde</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sé</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tatuapé</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tremembé</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Tucuruvi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Andrade</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Curuça</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Formosa</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Guilherme</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Jacuí</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Leopoldina</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Maria</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Mariana</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Matilde</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Medeiros</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Prudente</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vila Sônia</string>
     </property>
    </item>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>640</y>
-     <width>131</width>
+     <x>850</x>
+     <y>510</y>
+     <width>231</width>
      <height>31</height>
     </rect>
    </property>
@@ -634,6 +1099,614 @@
    <property name="text">
     <string>Salvar</string>
    </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>171</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Esportes</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>98</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QCheckBox" name="checkBox_12">
+       <property name="text">
+        <string>Futebol</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_9">
+       <property name="text">
+        <string>Futsal</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_5">
+       <property name="text">
+        <string>Vôlei</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_6">
+       <property name="text">
+        <string>Handebol</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_11">
+       <property name="text">
+        <string>Jiu-Jitsu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>Judô</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_6">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>93</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <widget class="QCheckBox" name="checkBox_13">
+       <property name="text">
+        <string>Rugby</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_14">
+       <property name="text">
+        <string>Natação</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_15">
+       <property name="text">
+        <string>Basquete</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_16">
+       <property name="text">
+        <string>Tênis de Mesa</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_17">
+       <property name="text">
+        <string>Tênis</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_24">
+       <property name="text">
+        <string>Xadrez</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>verticalLayoutWidget_5</zorder>
+   <zorder>verticalLayoutWidget_6</zorder>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>180</y>
+     <width>201</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Preferências</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>115</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <widget class="QCheckBox" name="checkBox_18">
+       <property name="text">
+        <string>Balada</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_10">
+       <property name="text">
+        <string>Ler um Livro</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_7">
+       <property name="text">
+        <string>Role no Shopping</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_8">
+       <property name="text">
+        <string>Ficar em Casa</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_19">
+       <property name="text">
+        <string>Tirar uma Soneca</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="text">
+        <string>Passear no Parque</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_8">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>91</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item>
+      <widget class="QCheckBox" name="checkBox_20">
+       <property name="text">
+        <string>Concerto</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_21">
+       <property name="text">
+        <string>Teatro</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_22">
+       <property name="text">
+        <string>Show</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_23">
+       <property name="text">
+        <string>Bar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_25">
+       <property name="text">
+        <string>Cinema</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_26">
+       <property name="text">
+        <string>Stand-Up</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>180</y>
+     <width>161</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Música</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>72</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_15">
+     <item>
+      <widget class="QCheckBox" name="checkBox_61">
+       <property name="text">
+        <string>Eletônica</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_62">
+       <property name="text">
+        <string>Reggae</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_63">
+       <property name="text">
+        <string>Rock</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_64">
+       <property name="text">
+        <string>Rap</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_65">
+       <property name="text">
+        <string>Sertanejo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_66">
+       <property name="text">
+        <string>Samba</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_16">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>72</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_16">
+     <item>
+      <widget class="QCheckBox" name="checkBox_67">
+       <property name="text">
+        <string>Pagode</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_68">
+       <property name="text">
+        <string>Clássica</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_69">
+       <property name="text">
+        <string>Funk</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_70">
+       <property name="text">
+        <string>Jazz</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_71">
+       <property name="text">
+        <string>Forró</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_72">
+       <property name="text">
+        <string>MPB</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>180</y>
+     <width>211</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Instrumentos</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_19">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>78</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_19">
+     <item>
+      <widget class="QCheckBox" name="checkBox_85">
+       <property name="text">
+        <string>Percurssão</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_86">
+       <property name="text">
+        <string>Saxofone</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_87">
+       <property name="text">
+        <string>Violão</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_88">
+       <property name="text">
+        <string>Gaita</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_89">
+       <property name="text">
+        <string>Piano</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_90">
+       <property name="text">
+        <string>Baixo</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_20">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>82</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_20">
+     <item>
+      <widget class="QCheckBox" name="checkBox_91">
+       <property name="text">
+        <string>Banjo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_92">
+       <property name="text">
+        <string>Cavaquinho</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_93">
+       <property name="text">
+        <string>Xilofone</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_94">
+       <property name="text">
+        <string>Violino</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_95">
+       <property name="text">
+        <string>Flauta</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_96">
+       <property name="text">
+        <string>Ukulele</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_6">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>180</y>
+     <width>231</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Entidades</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_23">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>153</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_23">
+     <item>
+      <widget class="QCheckBox" name="checkBox_109">
+       <property name="text">
+        <string>Bateria Imperial</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_110">
+       <property name="text">
+        <string>Revista Insper Post</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_111">
+       <property name="text">
+        <string>Liga de Empreendedorismo</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_112">
+       <property name="text">
+        <string>Sementes Culturais</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_113">
+       <property name="text">
+        <string>Diretório Acadêmico</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_114">
+       <property name="text">
+        <string>InFinance</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_24">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>73</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_24">
+     <item>
+      <widget class="QCheckBox" name="checkBox_115">
+       <property name="text">
+        <string>AIESEC</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_116">
+       <property name="text">
+        <string>Enactus</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_117">
+       <property name="text">
+        <string>BemGasto</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_118">
+       <property name="text">
+        <string>GAS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_119">
+       <property name="text">
+        <string>Atlética</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_120">
+       <property name="text">
+        <string>Insper Jr</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
  </widget>
  <resources/>
