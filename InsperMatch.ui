@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>InsperMatch</class>
  <widget class="QWidget" name="InsperMatch">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -432,19 +435,6 @@
    <iconset>
     <normaloff>../../../Pictures/raposa atlética.jpg</normaloff>../../../Pictures/raposa atlética.jpg</iconset>
   </property>
-  <widget class="QMdiArea" name="mdiArea">
-   <property name="geometry">
-    <rect>
-     <x>940</x>
-     <y>10</y>
-     <width>131</width>
-     <height>151</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::Box</enum>
-   </property>
-  </widget>
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
@@ -461,6 +451,24 @@
        <font>
         <pointsize>12</pointsize>
        </font>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+      <property name="accessibleDescription">
+       <string/>
       </property>
       <property name="text">
        <string>Sexo:</string>
@@ -609,7 +617,7 @@
     <rect>
      <x>10</x>
      <y>510</y>
-     <width>51</width>
+     <width>81</width>
      <height>21</height>
     </rect>
    </property>
@@ -619,13 +627,13 @@
     </font>
    </property>
    <property name="text">
-    <string>Bairro:</string>
+    <string>Endereço:</string>
    </property>
   </widget>
   <widget class="QComboBox" name="comboBox_2">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>100</x>
      <y>510</y>
      <width>181</width>
      <height>22</height>
@@ -638,7 +646,7 @@
    </property>
    <item>
     <property name="text">
-     <string/>
+     <string>Bairro</string>
     </property>
    </item>
    <item>
@@ -1081,6 +1089,11 @@
      <string>Vila Sônia</string>
     </property>
    </item>
+   <item>
+    <property name="text">
+     <string>Outros</string>
+    </property>
+   </item>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
@@ -1220,9 +1233,6 @@
      </item>
     </layout>
    </widget>
-   <zorder>verticalLayoutWidget</zorder>
-   <zorder>verticalLayoutWidget_5</zorder>
-   <zorder>verticalLayoutWidget_6</zorder>
   </widget>
   <widget class="QGroupBox" name="groupBox_3">
    <property name="geometry">
@@ -1350,7 +1360,7 @@
     <rect>
      <x>420</x>
      <y>180</y>
-     <width>161</width>
+     <width>171</width>
      <height>311</height>
     </rect>
    </property>
@@ -1414,7 +1424,7 @@
    <widget class="QWidget" name="verticalLayoutWidget_16">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>100</x>
       <y>10</y>
       <width>72</width>
       <height>301</height>
@@ -1471,7 +1481,7 @@
     <rect>
      <x>610</x>
      <y>180</y>
-     <width>211</width>
+     <width>201</width>
      <height>311</height>
     </rect>
    </property>
@@ -1590,9 +1600,9 @@
   <widget class="QGroupBox" name="groupBox_6">
    <property name="geometry">
     <rect>
-     <x>850</x>
+     <x>830</x>
      <y>180</y>
-     <width>231</width>
+     <width>251</width>
      <height>311</height>
     </rect>
    </property>
@@ -1611,6 +1621,27 @@
     <layout class="QVBoxLayout" name="verticalLayout_23">
      <item>
       <widget class="QCheckBox" name="checkBox_109">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;&quot;&gt;A Bateria Imperial tem como objetivo contagiar os alunos do Insper, apoiar os atletas e cultivar o espírito de união dentro da faculdade. Fundada em 2009, sempre marca presença em competições  universitárias e torneios de baterias, além de participar de apresentações e eventos realizados pela faculdade ou por outras entidades estudantis.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
+       <property name="statusTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
        <property name="text">
         <string>Bateria Imperial</string>
        </property>
@@ -1618,6 +1649,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_110">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;&quot;&gt;O Insper Post, revista da faculdade produzido por nós estudantes, tem como objetivo ser um espaço para a disseminação de conteúdos, além de revelar o que acontece aqui dentro de acordo com a nossa visão. Também estimula o desenvolvimento da prática escrita e colabora para a formação intelectual de todos.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>Revista Insper Post</string>
        </property>
@@ -1625,6 +1662,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_111">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; color:#414042; background-color:#ffffff;&quot;&gt;A Liga de Empreendedores Insper é um grupo formado por 20 alunos que querem se tornar grandes líderes empresariais brasileiros. Através de reuniões semanais, os membros recebem mentoria de jovensempresários de sucesso e de alguns dos maiores líderesempresariais do Brasil. Se você é um realizador, alguém que deseja fazer a diferença, deixar um legado, aqui vai encontrar gente boa como você.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>Liga de Empreendedorismo</string>
        </property>
@@ -1632,6 +1675,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_112">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;&quot;&gt;Além de discutir a produção e a indústria cultural brasileiras, este projeto estimula a participação nas atividades relacionadas ao cinema, artes plásticas, literatura e música popular, entre outras.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>Sementes Culturais</string>
        </property>
@@ -1639,6 +1688,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_113">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;&quot;&gt;Responsável por promover o diálogo entre a Instituição e os alunos, o Diretório Acadêmico é, também, o principal contato com as outras instituições acadêmicas. Com atuação nas questões comunitárias e acadêmicas, busca estreitar as relações entre estudantes, professores e demais colaboradores.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>Diretório Acadêmico</string>
        </property>
@@ -1646,6 +1701,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_114">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;&quot;&gt;InFinance é uma organização estudantil voltada para prática e estudos de finanças, no qual os alunos do Insper mantêm contato com o mercado financeiro e profissionais reconhecidos nesta área. Nosso integrantes têm acesso a projetos e researches sobre o setor. Temos o objetivo de capacitar os participantes e oferecer experiência no mercado financeiro, com valores fundamentados na ética, responsabilidade e comprometimento.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>InFinance</string>
        </property>
@@ -1656,7 +1717,7 @@
    <widget class="QWidget" name="verticalLayoutWidget_24">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>170</x>
       <y>10</y>
       <width>73</width>
       <height>301</height>
@@ -1665,6 +1726,12 @@
     <layout class="QVBoxLayout" name="verticalLayout_24">
      <item>
       <widget class="QCheckBox" name="checkBox_115">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;&quot;&gt;A AIESEC é uma organização internacional de estudantes que, por meio de trabalho dentro da instituição e de intercâmbios profissionais estimula o jovem a desenvolver seu talento para fazer diferença na sociedade. O escritório AIESEC Insper foi criado em dezembro de 2009.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>AIESEC</string>
        </property>
@@ -1672,6 +1739,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_116">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;&quot;&gt;Enactus é uma comunidade global de estudantes, acadêmicos e líderes de negócio comprometidos. &lt;/span&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;&quot;&gt;Trabalhamos para solucionar problemas sociais através da ação empreendedora. Unindo estudantes a professores e líderes de negócio, criamos e empreendemos negócios sociais autossustentáveis, que têm a finalidade de melhorar a vida de pessoas que não tiveram oportunidades. Todo o retorno dos negócios é reinvestido nos mesmos, potencializando ainda mais nosso impacto.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>Enactus</string>
        </property>
@@ -1679,6 +1752,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_117">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;&quot;&gt;O Bem Gasto é um projeto sem fins lucrativos de educação financeira para jovens e adultos.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>BemGasto</string>
        </property>
@@ -1686,6 +1765,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_118">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;&quot;&gt;Órgão que desenvolve projetos voltados à reflexão e à prática de ações sociais. Com foco nas mais diversas questões relacionadas à responsabilidade social, o GAS - Grupo de Ação Social promove amplos debates sobre o assunto, incluindo temas como o crescimento deste campo nas empresas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>GAS</string>
        </property>
@@ -1693,6 +1778,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_119">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;&quot;&gt;A Atlética Insper é a entidade responsável por disponibilizar treinos esportivos para todos os alunos da graduação e pós-graduação. Para sustentar um portfólio de 12 modalidades, captamos recursos através da realização de festas e da conquista de patrocinadores, que permitem colocar em prática nosso objetivo principal: a prática esportiva e a representatividade do Insper nos principais campeonatos universitários.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>Atlética</string>
        </property>
@@ -1700,6 +1791,12 @@
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_120">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;&quot;&gt;Comandada pelos alunos do terceiro e quarto anos de graduação, a Insper Jr. Consulting&lt;/span&gt;&lt;span style=&quot; font-family:'Prelo-Book,Verdana'; font-size:16px; font-weight:296; color:#000000;&quot;&gt; presta serviços a diversos clientes, nas áreas de Administração e Economia. A criatividade das soluções apresentadas e o comprometimento com resultados são seus principais diferenciais.&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>100000</number>
+       </property>
        <property name="text">
         <string>Insper Jr</string>
        </property>
@@ -1707,6 +1804,122 @@
      </item>
     </layout>
    </widget>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>150</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Período</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>20</y>
+     <width>121</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>100</y>
+     <width>411</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>E-Mail:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit_2">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
