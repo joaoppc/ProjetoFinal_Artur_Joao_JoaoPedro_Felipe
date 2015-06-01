@@ -389,22 +389,22 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_5 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_5.setObjectName(_fromUtf8("checkBox_5"))
         self.verticalLayout_5.addWidget(self.checkBox_5)
-         lista_check.append(self.checkBox_5)
+        lista_check.append(self.checkBox_5)
         
         self.checkBox_6 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_6.setObjectName(_fromUtf8("checkBox_6"))
         self.verticalLayout_5.addWidget(self.checkBox_6)
-         lista_check.append(self.checkBox_6)
+        lista_check.append(self.checkBox_6)
         
         self.checkBox_11 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_11.setObjectName(_fromUtf8("checkBox_11"))
         self.verticalLayout_5.addWidget(self.checkBox_11)
-         lista_check.append(self.checkBox_11)
+        lista_check.append(self.checkBox_11)
         
         self.checkBox = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox.setObjectName(_fromUtf8("checkBox"))
         self.verticalLayout_5.addWidget(self.checkBox)
-         lista_check.append(self.checkBox)
+        lista_check.append(self.checkBox)
         
         self.verticalLayoutWidget_6 = QtGui.QWidget(self.groupBox_2)
         self.verticalLayoutWidget_6.setGeometry(QtCore.QRect(80, 10, 93, 301))
@@ -416,31 +416,31 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_13.setObjectName(_fromUtf8("checkBox_13"))
         self.verticalLayout_6.addWidget(self.checkBox_13)
         self.checkBox_14 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
-         lista_check.append(self.checkBox_13)
+        lista_check.append(self.checkBox_13)
         
         self.checkBox_14.setObjectName(_fromUtf8("checkBox_14"))
         self.verticalLayout_6.addWidget(self.checkBox_14)
         self.checkBox_15 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
-         lista_check.append(self.checkBox_14)
+        lista_check.append(self.checkBox_14)
         
         self.checkBox_15.setObjectName(_fromUtf8("checkBox_15"))
         self.verticalLayout_6.addWidget(self.checkBox_15)
         self.checkBox_16 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
-         lista_check.append(self.checkBox_15)
+        lista_check.append(self.checkBox_15)
         
         self.checkBox_16.setObjectName(_fromUtf8("checkBox_16"))
         self.verticalLayout_6.addWidget(self.checkBox_16)
         self.checkBox_17 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
-         lista_check.append(self.checkBox_16)
+        lista_check.append(self.checkBox_16)
          
         self.checkBox_17.setObjectName(_fromUtf8("checkBox_17"))
         self.verticalLayout_6.addWidget(self.checkBox_17)
         self.checkBox_24 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
-         lista_check.append(self.checkBox_17)
+        lista_check.append(self.checkBox_17)
         
         self.checkBox_24.setObjectName(_fromUtf8("checkBox_24"))
         self.verticalLayout_6.addWidget(self.checkBox_24)
-         lista_check.append(self.checkBox_24)
+        lista_check.append(self.checkBox_24)
         
         self.groupBox_3 = QtGui.QGroupBox(InsperMatch)
         self.groupBox_3.setGeometry(QtCore.QRect(200, 180, 201, 311))
@@ -455,31 +455,31 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_18.setObjectName(_fromUtf8("checkBox_18"))
         self.verticalLayout_7.addWidget(self.checkBox_18)
         self.checkBox_10 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
-         lista_check.append(self.checkBox_18)
+        lista_check.append(self.checkBox_18)
         
         self.checkBox_10.setObjectName(_fromUtf8("checkBox_10"))
         self.verticalLayout_7.addWidget(self.checkBox_10)
         self.checkBox_7 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
-         lista_check.append(self.checkBox_10)
+        lista_check.append(self.checkBox_10)
         
         self.checkBox_7.setObjectName(_fromUtf8("checkBox_7"))
         self.verticalLayout_7.addWidget(self.checkBox_7)
         self.checkBox_8 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
-         lista_check.append(self.checkBox_7)
+        lista_check.append(self.checkBox_7)
         
         self.checkBox_8.setObjectName(_fromUtf8("checkBox_8"))
         self.verticalLayout_7.addWidget(self.checkBox_8)
         self.checkBox_19 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
-         lista_check.append(self.checkBox_8)
+        lista_check.append(self.checkBox_8)
         
         self.checkBox_19.setObjectName(_fromUtf8("checkBox_19"))
         self.verticalLayout_7.addWidget(self.checkBox_19)
         self.checkBox_2 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
-         lista_check.append(self.checkBox_19)
+        lista_check.append(self.checkBox_19)
         
         self.checkBox_2.setObjectName(_fromUtf8("checkBox_2"))
         self.verticalLayout_7.addWidget(self.checkBox_2)
-         lista_check.append(self.checkBox_2)
+        lista_check.append(self.checkBox_2)
         
         self.verticalLayoutWidget_8 = QtGui.QWidget(self.groupBox_3)
         self.verticalLayoutWidget_8.setGeometry(QtCore.QRect(120, 10, 91, 301))
@@ -758,6 +758,8 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.verticalLayout_24.addWidget(self.checkBox_120)
         lista_check.append(self.checkBox_120)
 
+        print  (lista_check)
+        
         self.comboBox_3 = QtGui.QComboBox(InsperMatch)
         self.comboBox_3.setGeometry(QtCore.QRect(260, 150, 131, 22))
         font = QtGui.QFont()
@@ -993,7 +995,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.comboBox_3.setItemText(9, _translate("InsperMatch", "9", None))
         self.comboBox_3.setItemText(10, _translate("InsperMatch", "10", None))
         self.label_6.setText(_translate("InsperMatch", "E-Mail:", None))
-
+        
 if __name__=="__main__":
     app =QtGui.QApplication(sys.argv)
     win = Ui_InsperMatch()
