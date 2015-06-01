@@ -365,24 +365,47 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.verticalLayout_5 = QtGui.QVBoxLayout(self.verticalLayoutWidget_5)
         self.verticalLayout_5.setMargin(0)
         self.verticalLayout_5.setObjectName(_fromUtf8("verticalLayout_5"))
+        
+        lista_check = []
+
+        
         self.checkBox_12 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_12.setObjectName(_fromUtf8("checkBox_12"))
-        self.verticalLayout_5.addWidget(self.checkBox_12)
+        lista_check.append(self.checkBox_12)
+
+        self.verticalLayout_5.addWidget(lista_check[0])
+        
+        for i in lista_check:
+            if(i.checkState()):
+                print("ta la")
+                
+                
+        
         self.checkBox_9 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_9.setObjectName(_fromUtf8("checkBox_9"))
-        self.verticalLayout_5.addWidget(self.checkBox_9)
+        lista_check.append(self.checkBox_9)
+        self.verticalLayout_5.addWidget(lista_check[1])
+       
         self.checkBox_5 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_5.setObjectName(_fromUtf8("checkBox_5"))
         self.verticalLayout_5.addWidget(self.checkBox_5)
+         lista_check.append(self.checkBox_5)
+        
         self.checkBox_6 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_6.setObjectName(_fromUtf8("checkBox_6"))
         self.verticalLayout_5.addWidget(self.checkBox_6)
+         lista_check.append(self.checkBox_6)
+        
         self.checkBox_11 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_11.setObjectName(_fromUtf8("checkBox_11"))
         self.verticalLayout_5.addWidget(self.checkBox_11)
+         lista_check.append(self.checkBox_11)
+        
         self.checkBox = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox.setObjectName(_fromUtf8("checkBox"))
         self.verticalLayout_5.addWidget(self.checkBox)
+         lista_check.append(self.checkBox)
+        
         self.verticalLayoutWidget_6 = QtGui.QWidget(self.groupBox_2)
         self.verticalLayoutWidget_6.setGeometry(QtCore.QRect(80, 10, 93, 301))
         self.verticalLayoutWidget_6.setObjectName(_fromUtf8("verticalLayoutWidget_6"))
@@ -393,20 +416,32 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_13.setObjectName(_fromUtf8("checkBox_13"))
         self.verticalLayout_6.addWidget(self.checkBox_13)
         self.checkBox_14 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
+         lista_check.append(self.checkBox_13)
+        
         self.checkBox_14.setObjectName(_fromUtf8("checkBox_14"))
         self.verticalLayout_6.addWidget(self.checkBox_14)
         self.checkBox_15 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
+         lista_check.append(self.checkBox_14)
+        
         self.checkBox_15.setObjectName(_fromUtf8("checkBox_15"))
         self.verticalLayout_6.addWidget(self.checkBox_15)
         self.checkBox_16 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
+         lista_check.append(self.checkBox_15)
+        
         self.checkBox_16.setObjectName(_fromUtf8("checkBox_16"))
         self.verticalLayout_6.addWidget(self.checkBox_16)
         self.checkBox_17 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
+         lista_check.append(self.checkBox_16)
+         
         self.checkBox_17.setObjectName(_fromUtf8("checkBox_17"))
         self.verticalLayout_6.addWidget(self.checkBox_17)
         self.checkBox_24 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
+         lista_check.append(self.checkBox_17)
+        
         self.checkBox_24.setObjectName(_fromUtf8("checkBox_24"))
         self.verticalLayout_6.addWidget(self.checkBox_24)
+         lista_check.append(self.checkBox_24)
+        
         self.groupBox_3 = QtGui.QGroupBox(InsperMatch)
         self.groupBox_3.setGeometry(QtCore.QRect(200, 180, 201, 311))
         self.groupBox_3.setObjectName(_fromUtf8("groupBox_3"))
@@ -420,20 +455,32 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_18.setObjectName(_fromUtf8("checkBox_18"))
         self.verticalLayout_7.addWidget(self.checkBox_18)
         self.checkBox_10 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
+         lista_check.append(self.checkBox_18)
+        
         self.checkBox_10.setObjectName(_fromUtf8("checkBox_10"))
         self.verticalLayout_7.addWidget(self.checkBox_10)
         self.checkBox_7 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
+         lista_check.append(self.checkBox_10)
+        
         self.checkBox_7.setObjectName(_fromUtf8("checkBox_7"))
         self.verticalLayout_7.addWidget(self.checkBox_7)
         self.checkBox_8 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
+         lista_check.append(self.checkBox_7)
+        
         self.checkBox_8.setObjectName(_fromUtf8("checkBox_8"))
         self.verticalLayout_7.addWidget(self.checkBox_8)
         self.checkBox_19 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
+         lista_check.append(self.checkBox_8)
+        
         self.checkBox_19.setObjectName(_fromUtf8("checkBox_19"))
         self.verticalLayout_7.addWidget(self.checkBox_19)
         self.checkBox_2 = QtGui.QCheckBox(self.verticalLayoutWidget_7)
+         lista_check.append(self.checkBox_19)
+        
         self.checkBox_2.setObjectName(_fromUtf8("checkBox_2"))
         self.verticalLayout_7.addWidget(self.checkBox_2)
+         lista_check.append(self.checkBox_2)
+        
         self.verticalLayoutWidget_8 = QtGui.QWidget(self.groupBox_3)
         self.verticalLayoutWidget_8.setGeometry(QtCore.QRect(120, 10, 91, 301))
         self.verticalLayoutWidget_8.setObjectName(_fromUtf8("verticalLayoutWidget_8"))
@@ -444,20 +491,33 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_20.setObjectName(_fromUtf8("checkBox_20"))
         self.verticalLayout_8.addWidget(self.checkBox_20)
         self.checkBox_21 = QtGui.QCheckBox(self.verticalLayoutWidget_8)
+        
         self.checkBox_21.setObjectName(_fromUtf8("checkBox_21"))
         self.verticalLayout_8.addWidget(self.checkBox_21)
+        lista_check.append(self.checkBox_21)
+        
         self.checkBox_22 = QtGui.QCheckBox(self.verticalLayoutWidget_8)
         self.checkBox_22.setObjectName(_fromUtf8("checkBox_22"))
         self.verticalLayout_8.addWidget(self.checkBox_22)
+        lista_check.append(self.checkBox_22)
+        
+        
         self.checkBox_23 = QtGui.QCheckBox(self.verticalLayoutWidget_8)
         self.checkBox_23.setObjectName(_fromUtf8("checkBox_23"))
         self.verticalLayout_8.addWidget(self.checkBox_23)
-        self.checkBox_25 = QtGui.QCheckBox(self.verticalLayoutWidget_8)
+        lista_check.append(self.checkBox_23)
+        
+        self.checkBox_25 = QtGui.QCheckBox(self.verticalLayoutWidget_8)        
         self.checkBox_25.setObjectName(_fromUtf8("checkBox_25"))
         self.verticalLayout_8.addWidget(self.checkBox_25)
-        self.checkBox_26 = QtGui.QCheckBox(self.verticalLayoutWidget_8)
+        lista_check.append(self.checkBox_25)
+        
+        
+        self.checkBox_26 = QtGui.QCheckBox(self.verticalLayoutWidget_8)        
         self.checkBox_26.setObjectName(_fromUtf8("checkBox_26"))
         self.verticalLayout_8.addWidget(self.checkBox_26)
+        lista_check.append(self.checkBox_26)
+        
         self.groupBox_4 = QtGui.QGroupBox(InsperMatch)
         self.groupBox_4.setGeometry(QtCore.QRect(420, 180, 171, 311))
         self.groupBox_4.setObjectName(_fromUtf8("groupBox_4"))
@@ -470,21 +530,33 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_61 = QtGui.QCheckBox(self.verticalLayoutWidget_15)
         self.checkBox_61.setObjectName(_fromUtf8("checkBox_61"))
         self.verticalLayout_15.addWidget(self.checkBox_61)
+        lista_check.append(self.checkBox_61)
+        
         self.checkBox_62 = QtGui.QCheckBox(self.verticalLayoutWidget_15)
         self.checkBox_62.setObjectName(_fromUtf8("checkBox_62"))
         self.verticalLayout_15.addWidget(self.checkBox_62)
+        lista_check.append(self.checkBox_62)
+        
         self.checkBox_63 = QtGui.QCheckBox(self.verticalLayoutWidget_15)
         self.checkBox_63.setObjectName(_fromUtf8("checkBox_63"))
         self.verticalLayout_15.addWidget(self.checkBox_63)
+        lista_check.append(self.checkBox_63)
+        
         self.checkBox_64 = QtGui.QCheckBox(self.verticalLayoutWidget_15)
         self.checkBox_64.setObjectName(_fromUtf8("checkBox_64"))
         self.verticalLayout_15.addWidget(self.checkBox_64)
+        lista_check.append(self.checkBox_64)
+        
         self.checkBox_65 = QtGui.QCheckBox(self.verticalLayoutWidget_15)
         self.checkBox_65.setObjectName(_fromUtf8("checkBox_65"))
         self.verticalLayout_15.addWidget(self.checkBox_65)
+        lista_check.append(self.checkBox_65)
+        
         self.checkBox_66 = QtGui.QCheckBox(self.verticalLayoutWidget_15)
         self.checkBox_66.setObjectName(_fromUtf8("checkBox_66"))
         self.verticalLayout_15.addWidget(self.checkBox_66)
+        lista_check.append(self.checkBox_66)
+        
         self.verticalLayoutWidget_16 = QtGui.QWidget(self.groupBox_4)
         self.verticalLayoutWidget_16.setGeometry(QtCore.QRect(100, 10, 72, 301))
         self.verticalLayoutWidget_16.setObjectName(_fromUtf8("verticalLayoutWidget_16"))
@@ -494,21 +566,33 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_67 = QtGui.QCheckBox(self.verticalLayoutWidget_16)
         self.checkBox_67.setObjectName(_fromUtf8("checkBox_67"))
         self.verticalLayout_16.addWidget(self.checkBox_67)
+        lista_check.append(self.checkBox_67)
+        
         self.checkBox_68 = QtGui.QCheckBox(self.verticalLayoutWidget_16)
         self.checkBox_68.setObjectName(_fromUtf8("checkBox_68"))
         self.verticalLayout_16.addWidget(self.checkBox_68)
+        lista_check.append(self.checkBox_68)
+        
         self.checkBox_69 = QtGui.QCheckBox(self.verticalLayoutWidget_16)
         self.checkBox_69.setObjectName(_fromUtf8("checkBox_69"))
         self.verticalLayout_16.addWidget(self.checkBox_69)
+        lista_check.append(self.checkBox_69)
+        
         self.checkBox_70 = QtGui.QCheckBox(self.verticalLayoutWidget_16)
         self.checkBox_70.setObjectName(_fromUtf8("checkBox_70"))
         self.verticalLayout_16.addWidget(self.checkBox_70)
+        lista_check.append(self.checkBox_70)
+        
         self.checkBox_71 = QtGui.QCheckBox(self.verticalLayoutWidget_16)
         self.checkBox_71.setObjectName(_fromUtf8("checkBox_71"))
         self.verticalLayout_16.addWidget(self.checkBox_71)
+        lista_check.append(self.checkBox_71)
+        
         self.checkBox_72 = QtGui.QCheckBox(self.verticalLayoutWidget_16)
         self.checkBox_72.setObjectName(_fromUtf8("checkBox_72"))
         self.verticalLayout_16.addWidget(self.checkBox_72)
+        lista_check.append(self.checkBox_72)
+        
         self.groupBox_5 = QtGui.QGroupBox(InsperMatch)
         self.groupBox_5.setGeometry(QtCore.QRect(610, 180, 201, 311))
         self.groupBox_5.setObjectName(_fromUtf8("groupBox_5"))
@@ -521,21 +605,32 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_85 = QtGui.QCheckBox(self.verticalLayoutWidget_19)
         self.checkBox_85.setObjectName(_fromUtf8("checkBox_85"))
         self.verticalLayout_19.addWidget(self.checkBox_85)
+        lista_check.append(self.checkBox_85)
+        
         self.checkBox_86 = QtGui.QCheckBox(self.verticalLayoutWidget_19)
         self.checkBox_86.setObjectName(_fromUtf8("checkBox_86"))
         self.verticalLayout_19.addWidget(self.checkBox_86)
+        lista_check.append(self.checkBox_86)
+        
         self.checkBox_87 = QtGui.QCheckBox(self.verticalLayoutWidget_19)
         self.checkBox_87.setObjectName(_fromUtf8("checkBox_87"))
         self.verticalLayout_19.addWidget(self.checkBox_87)
+        lista_check.append(self.checkBox_87)
+        
         self.checkBox_88 = QtGui.QCheckBox(self.verticalLayoutWidget_19)
         self.checkBox_88.setObjectName(_fromUtf8("checkBox_88"))
         self.verticalLayout_19.addWidget(self.checkBox_88)
+        lista_check.append(self.checkBox_88)
+        
         self.checkBox_89 = QtGui.QCheckBox(self.verticalLayoutWidget_19)
         self.checkBox_89.setObjectName(_fromUtf8("checkBox_89"))
         self.verticalLayout_19.addWidget(self.checkBox_89)
+        
         self.checkBox_90 = QtGui.QCheckBox(self.verticalLayoutWidget_19)
         self.checkBox_90.setObjectName(_fromUtf8("checkBox_90"))
         self.verticalLayout_19.addWidget(self.checkBox_90)
+        lista_check.append(self.checkBox_90)
+        
         self.verticalLayoutWidget_20 = QtGui.QWidget(self.groupBox_5)
         self.verticalLayoutWidget_20.setGeometry(QtCore.QRect(120, 10, 82, 301))
         self.verticalLayoutWidget_20.setObjectName(_fromUtf8("verticalLayoutWidget_20"))
@@ -545,21 +640,32 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_91 = QtGui.QCheckBox(self.verticalLayoutWidget_20)
         self.checkBox_91.setObjectName(_fromUtf8("checkBox_91"))
         self.verticalLayout_20.addWidget(self.checkBox_91)
+        lista_check.append(self.checkBox_91)
+        
         self.checkBox_92 = QtGui.QCheckBox(self.verticalLayoutWidget_20)
         self.checkBox_92.setObjectName(_fromUtf8("checkBox_92"))
         self.verticalLayout_20.addWidget(self.checkBox_92)
+        lista_check.append(self.checkBox_92)
+        
         self.checkBox_93 = QtGui.QCheckBox(self.verticalLayoutWidget_20)
         self.checkBox_93.setObjectName(_fromUtf8("checkBox_93"))
         self.verticalLayout_20.addWidget(self.checkBox_93)
+        lista_check.append(self.checkBox_93)
+        
         self.checkBox_94 = QtGui.QCheckBox(self.verticalLayoutWidget_20)
         self.checkBox_94.setObjectName(_fromUtf8("checkBox_94"))
         self.verticalLayout_20.addWidget(self.checkBox_94)
+        
         self.checkBox_95 = QtGui.QCheckBox(self.verticalLayoutWidget_20)
         self.checkBox_95.setObjectName(_fromUtf8("checkBox_95"))
         self.verticalLayout_20.addWidget(self.checkBox_95)
+        lista_check.append(self.checkBox_95)
+        
         self.checkBox_96 = QtGui.QCheckBox(self.verticalLayoutWidget_20)
         self.checkBox_96.setObjectName(_fromUtf8("checkBox_96"))
         self.verticalLayout_20.addWidget(self.checkBox_96)
+        lista_check.append(self.checkBox_96)
+        
         self.groupBox_6 = QtGui.QGroupBox(InsperMatch)
         self.groupBox_6.setGeometry(QtCore.QRect(830, 180, 251, 311))
         self.groupBox_6.setObjectName(_fromUtf8("groupBox_6"))
@@ -578,26 +684,38 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_109.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.checkBox_109.setObjectName(_fromUtf8("checkBox_109"))
         self.verticalLayout_23.addWidget(self.checkBox_109)
+        lista_check.append(self.checkBox_109)
+        
         self.checkBox_110 = QtGui.QCheckBox(self.verticalLayoutWidget_23)
        # self.checkBox_110.setToolTipDuration(100000)
         self.checkBox_110.setObjectName(_fromUtf8("checkBox_110"))
         self.verticalLayout_23.addWidget(self.checkBox_110)
+        lista_check.append(self.checkBox_110)
+        
         self.checkBox_111 = QtGui.QCheckBox(self.verticalLayoutWidget_23)
         #self.checkBox_111.setToolTipDuration(100000)
         self.checkBox_111.setObjectName(_fromUtf8("checkBox_111"))
         self.verticalLayout_23.addWidget(self.checkBox_111)
+        lista_check.append(self.checkBox_111)
+        
         self.checkBox_112 = QtGui.QCheckBox(self.verticalLayoutWidget_23)
        # self.checkBox_112.setToolTipDuration(100000)
         self.checkBox_112.setObjectName(_fromUtf8("checkBox_112"))
         self.verticalLayout_23.addWidget(self.checkBox_112)
+        lista_check.append(self.checkBox_112)
+        
         self.checkBox_113 = QtGui.QCheckBox(self.verticalLayoutWidget_23)
        # self.checkBox_113.setToolTipDuration(100000)
         self.checkBox_113.setObjectName(_fromUtf8("checkBox_113"))
         self.verticalLayout_23.addWidget(self.checkBox_113)
+        lista_check.append(self.checkBox_113)
+        
         self.checkBox_114 = QtGui.QCheckBox(self.verticalLayoutWidget_23)
        # self.checkBox_114.setToolTipDuration(100000)
         self.checkBox_114.setObjectName(_fromUtf8("checkBox_114"))
         self.verticalLayout_23.addWidget(self.checkBox_114)
+        lista_check.append(self.checkBox_114)
+        
         self.verticalLayoutWidget_24 = QtGui.QWidget(self.groupBox_6)
         self.verticalLayoutWidget_24.setGeometry(QtCore.QRect(170, 10, 73, 301))
         self.verticalLayoutWidget_24.setObjectName(_fromUtf8("verticalLayoutWidget_24"))
@@ -608,26 +726,38 @@ class Ui_InsperMatch(QtGui.QWidget):
        # self.checkBox_115.setToolTipDuration(100000)
         self.checkBox_115.setObjectName(_fromUtf8("checkBox_115"))
         self.verticalLayout_24.addWidget(self.checkBox_115)
+        lista_check.append(self.checkBox_115)
+        
         self.checkBox_116 = QtGui.QCheckBox(self.verticalLayoutWidget_24)
        # self.checkBox_116.setToolTipDuration(100000)
         self.checkBox_116.setObjectName(_fromUtf8("checkBox_116"))
         self.verticalLayout_24.addWidget(self.checkBox_116)
+        lista_check.append(self.checkBox_116)
+        
         self.checkBox_117 = QtGui.QCheckBox(self.verticalLayoutWidget_24)
        # self.checkBox_117.setToolTipDuration(100000)
         self.checkBox_117.setObjectName(_fromUtf8("checkBox_117"))
         self.verticalLayout_24.addWidget(self.checkBox_117)
+        lista_check.append(self.checkBox_117)
+        
         self.checkBox_118 = QtGui.QCheckBox(self.verticalLayoutWidget_24)
        # self.checkBox_118.setToolTipDuration(100000)
         self.checkBox_118.setObjectName(_fromUtf8("checkBox_118"))
         self.verticalLayout_24.addWidget(self.checkBox_118)
+        lista_check.append(self.checkBox_118)
+        
         self.checkBox_119 = QtGui.QCheckBox(self.verticalLayoutWidget_24)
        # self.checkBox_119.setToolTipDuration(100000)
         self.checkBox_119.setObjectName(_fromUtf8("checkBox_119"))
         self.verticalLayout_24.addWidget(self.checkBox_119)
+        lista_check.append(self.checkBox_119)
+        
         self.checkBox_120 = QtGui.QCheckBox(self.verticalLayoutWidget_24)
        # self.checkBox_120.setToolTipDuration(100000)
         self.checkBox_120.setObjectName(_fromUtf8("checkBox_120"))
         self.verticalLayout_24.addWidget(self.checkBox_120)
+        lista_check.append(self.checkBox_120)
+
         self.comboBox_3 = QtGui.QComboBox(InsperMatch)
         self.comboBox_3.setGeometry(QtCore.QRect(260, 150, 131, 22))
         font = QtGui.QFont()
@@ -827,21 +957,21 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_95.setText(_translate("InsperMatch", "Flauta", None))
         self.checkBox_96.setText(_translate("InsperMatch", "Ukulele", None))
         self.groupBox_6.setTitle(_translate("InsperMatch", "Entidades", None))
-        self.checkBox_109.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">A Bateria Imperial tem como objetivo contagiar os alunos do Insper, apoiar os atletas e cultivar o espírito de união dentro da faculdade. Fundada em 2009, sempre marca presença em competições  universitárias e torneios de baterias, além de participar de apresentações e eventos realizados pela faculdade ou por outras entidades estudantis.</span></p></body></html>", None))
+        self.checkBox_109.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">A Bateria Imperial tem como objetivo contagiar os alunos do Insper, apoiar os atletas e cultivar o espírito de união dentro da faculdade. Fundada em 2009, sempre marca presença em competições  universitárias e torneios de baterias, além de participar de apresentações e eventos realizados pela faculdade ou por outras entidades estudantis.</span></p></body></html>", None))
         self.checkBox_109.setText(_translate("InsperMatch", "Bateria Imperial", None))
-        self.checkBox_110.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">O Insper Post, revista da faculdade produzido por nós estudantes, tem como objetivo ser um espaço para a disseminação de conteúdos, além de revelar o que acontece aqui dentro de acordo com a nossa visão. Também estimula o desenvolvimento da prática escrita e colabora para a formação intelectual de todos.</span></p></body></html>", None))
+        self.checkBox_110.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">O Insper Post, revista da faculdade produzido por nós estudantes, tem como objetivo ser um espaço para a disseminação de conteúdos, além de revelar o que acontece aqui dentro de acordo com a nossa visão. Também estimula o desenvolvimento da prática escrita e colabora para a formação intelectual de todos.</span></p></body></html>", None))
         self.checkBox_110.setText(_translate("InsperMatch", "Revista Insper Post", None))
-        self.checkBox_111.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; color:#414042; background-color:#ffffff;\">A Liga de Empreendedores Insper é um grupo formado por 20 alunos que querem se tornar grandes líderes empresariais brasileiros. Através de reuniões semanais, os membros recebem mentoria de jovensempresários de sucesso e de alguns dos maiores líderesempresariais do Brasil. Se você é um realizador, alguém que deseja fazer a diferença, deixar um legado, aqui vai encontrar gente boa como você.</span></p></body></html>", None))
+        self.checkBox_111.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; color:#414042; background-color:#ffffff;\">A Liga de Empreendedores Insper é um grupo formado por 20 alunos que querem se tornar grandes líderes empresariais brasileiros. Através de reuniões semanais, os membros recebem mentoria de jovensempresários de sucesso e de alguns dos maiores líderesempresariais do Brasil. Se você é um realizador, alguém que deseja fazer a diferença, deixar um legado, aqui vai encontrar gente boa como você.</span></p></body></html>", None))
         self.checkBox_111.setText(_translate("InsperMatch", "Liga de Empreendedorismo", None))
         self.checkBox_112.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">Além de discutir a produção e a indústria cultural brasileiras, este projeto estimula a participação nas atividades relacionadas ao cinema, artes plásticas, literatura e música popular, entre outras.</span></p></body></html>", None))
         self.checkBox_112.setText(_translate("InsperMatch", "Sementes Culturais", None))
-        self.checkBox_113.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">Responsável por promover o diálogo entre a Instituição e os alunos, o Diretório Acadêmico é, também, o principal contato com as outras instituições acadêmicas. Com atuação nas questões comunitárias e acadêmicas, busca estreitar as relações entre estudantes, professores e demais colaboradores.</span></p></body></html>", None))
+        self.checkBox_113.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">Responsável por promover o diálogo entre a Instituição e os alunos, o Diretório Acadêmico é, também, o principal contato com as outras instituições acadêmicas. Com atuação nas questões comunitárias e acadêmicas, busca estreitar as relações entre estudantes, professores e demais colaboradores.</span></p></body></html>", None))
         self.checkBox_113.setText(_translate("InsperMatch", "Diretório Acadêmico", None))
-        self.checkBox_114.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">InFinance é uma organização estudantil voltada para prática e estudos de finanças, no qual os alunos do Insper mantêm contato com o mercado financeiro e profissionais reconhecidos nesta área. Nosso integrantes têm acesso a projetos e researches sobre o setor. Temos o objetivo de capacitar os participantes e oferecer experiência no mercado financeiro, com valores fundamentados na ética, responsabilidade e comprometimento.</span></p></body></html>", None))
+        self.checkBox_114.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">InFinance é uma organização estudantil voltada para prática e estudos de finanças, no qual os alunos do Insper mantêm contato com o mercado financeiro e profissionais reconhecidos nesta área. Nosso integrantes têm acesso a projetos e researches sobre o setor. Temos o objetivo de capacitar os participantes e oferecer experiência no mercado financeiro, com valores fundamentados na ética, responsabilidade e comprometimento.</span></p></body></html>", None))
         self.checkBox_114.setText(_translate("InsperMatch", "InFinance", None))
-        self.checkBox_115.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">A AIESEC é uma organização internacional de estudantes que, por meio de trabalho dentro da instituição e de intercâmbios profissionais estimula o jovem a desenvolver seu talento para fazer diferença na sociedade. O escritório AIESEC Insper foi criado em dezembro de 2009.</span></p></body></html>", None))
+        self.checkBox_115.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">A AIESEC é uma organização internacional de estudantes que, por meio de trabalho dentro da instituição e de intercâmbios profissionais estimula o jovem a desenvolver seu talento para fazer diferença na sociedade. O escritório AIESEC Insper foi criado em dezembro de 2009.</span></p></body></html>", None))
         self.checkBox_115.setText(_translate("InsperMatch", "AIESEC", None))
-        self.checkBox_116.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;\">Enactus é uma comunidade global de estudantes, acadêmicos e líderes de negócio comprometidos. </span><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">Trabalhamos para solucionar problemas sociais através da ação empreendedora. Unindo estudantes a professores e líderes de negócio, criamos e empreendemos negócios sociais autossustentáveis, que têm a finalidade de melhorar a vida de pessoas que não tiveram oportunidades. Todo o retorno dos negócios é reinvestido nos mesmos, potencializando ainda mais nosso impacto.</span></p></body></html>", None))
+        self.checkBox_116.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;\">Enactus é uma comunidade global de estudantes, acadêmicos e líderes de negócio comprometidos. </span><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">Trabalhamos para solucionar problemas sociais através da ação empreendedora. Unindo estudantes a professores e líderes de negócio, criamos e empreendemos negócios sociais autossustentáveis, que têm a finalidade de melhorar a vida de pessoas que não tiveram oportunidades. Todo o retorno dos negócios é reinvestido nos mesmos, potencializando ainda mais nosso impacto.</span></p></body></html>", None))
         self.checkBox_116.setText(_translate("InsperMatch", "Enactus", None))
         self.checkBox_117.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;\">O Bem Gasto é um projeto sem fins lucrativos de educação financeira para jovens e adultos.</span></p></body></html>", None))
         self.checkBox_117.setText(_translate("InsperMatch", "BemGasto", None))
@@ -849,7 +979,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_118.setText(_translate("InsperMatch", "GAS", None))
         self.checkBox_119.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">A Atlética Insper é a entidade responsável por disponibilizar treinos esportivos para todos os alunos da graduação e pós-graduação. Para sustentar um portfólio de 12 modalidades, captamos recursos através da realização de festas e da conquista de patrocinadores, que permitem colocar em prática nosso objetivo principal: a prática esportiva e a representatividade do Insper nos principais campeonatos universitários.</span></p></body></html>", None))
         self.checkBox_119.setText(_translate("InsperMatch", "Atlética", None))
-        self.checkBox_120.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;\">Comandada pelos alunos do terceiro e quarto anos de graduação, a Insper Jr. Consulting</span><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000;\"> presta serviços a diversos clientes, nas áreas de Administração e Economia. A criatividade das soluções apresentadas e o comprometimento com resultados são seus principais diferenciais.</span><br/></p></body></html>", None))
+        self.checkBox_120.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;\">Comandada pelos alunos do terceiro e quarto anos de graduação, a Insper Jr. Consulting</span><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000;\"> presta serviços a diversos clientes, nas áreas de Administração e Economia. A criatividade das soluções apresentadas e o comprometimento com resultados são seus principais diferenciais.</span><br/></p></body></html>", None))
         self.checkBox_120.setText(_translate("InsperMatch", "Insper Jr", None))
         self.comboBox_3.setItemText(0, _translate("InsperMatch", "Período", None))
         self.comboBox_3.setItemText(1, _translate("InsperMatch", "1", None))

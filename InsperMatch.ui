@@ -549,8 +549,13 @@
     <rect>
      <x>10</x>
      <y>10</y>
+<<<<<<< Updated upstream
      <width>601</width>
      <height>41</height>
+=======
+     <width>61</width>
+     <height>31</height>
+>>>>>>> Stashed changes
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -566,6 +571,7 @@
       </property>
      </widget>
     </item>
+<<<<<<< Updated upstream
     <item>
      <widget class="QTextEdit" name="textEdit">
       <property name="font">
@@ -575,6 +581,8 @@
       </property>
      </widget>
     </item>
+=======
+>>>>>>> Stashed changes
    </layout>
   </widget>
   <widget class="QComboBox" name="comboBox">
@@ -1237,7 +1245,11 @@
   <widget class="QGroupBox" name="groupBox_3">
    <property name="geometry">
     <rect>
+<<<<<<< Updated upstream
      <x>200</x>
+=======
+     <x>20</x>
+>>>>>>> Stashed changes
      <y>180</y>
      <width>201</width>
      <height>311</height>
@@ -1250,9 +1262,15 @@
     <property name="geometry">
      <rect>
       <x>10</x>
+<<<<<<< Updated upstream
       <y>10</y>
       <width>115</width>
       <height>301</height>
+=======
+      <y>60</y>
+      <width>115</width>
+      <height>331</height>
+>>>>>>> Stashed changes
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -1370,10 +1388,17 @@
    <widget class="QWidget" name="verticalLayoutWidget_15">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>10</x>
       <y>10</y>
       <width>72</width>
       <height>301</height>
+=======
+      <x>130</x>
+      <y>60</y>
+      <width>140</width>
+      <height>331</height>
+>>>>>>> Stashed changes
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -1491,10 +1516,17 @@
    <widget class="QWidget" name="verticalLayoutWidget_19">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>20</x>
       <y>10</y>
       <width>78</width>
       <height>301</height>
+=======
+      <x>280</x>
+      <y>60</y>
+      <width>111</width>
+      <height>331</height>
+>>>>>>> Stashed changes
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_19">
@@ -1612,10 +1644,17 @@
    <widget class="QWidget" name="verticalLayoutWidget_23">
     <property name="geometry">
      <rect>
+<<<<<<< Updated upstream
       <x>10</x>
       <y>10</y>
       <width>153</width>
       <height>301</height>
+=======
+      <x>400</x>
+      <y>60</y>
+      <width>101</width>
+      <height>331</height>
+>>>>>>> Stashed changes
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_23">
@@ -1804,6 +1843,19 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ESPORTES:</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QComboBox" name="comboBox_3">
    <property name="geometry">
@@ -1920,6 +1972,29 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ESPORTES:</string>
+   </property>
   </widget>
  </widget>
  <resources/>
