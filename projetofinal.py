@@ -437,7 +437,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         
         self.checkBox_17 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
         self.checkBox_17.setObjectName(_fromUtf8("checkBox_17"))
-      	lista_check.append(self.checkBox_17)
+        lista_check.append(self.checkBox_17)
         self.verticalLayout_6.addWidget(lista_check[10])
         
         self.checkBox_24 = QtGui.QCheckBox(self.verticalLayoutWidget_6)
@@ -543,7 +543,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.verticalLayout_15.setMargin(0)
         self.verticalLayout_15.setObjectName(_fromUtf8("verticalLayout_15"))
        
-      	self.checkBox_61 = QtGui.QCheckBox(self.verticalLayoutWidget_15)
+        self.checkBox_61 = QtGui.QCheckBox(self.verticalLayoutWidget_15)
         self.checkBox_61.setObjectName(_fromUtf8("checkBox_61"))
         lista_check.append(self.checkBox_61)
         self.verticalLayout_15.addWidget(lista_check[24])
@@ -612,7 +612,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_72 = QtGui.QCheckBox(self.verticalLayoutWidget_16)
         self.checkBox_72.setObjectName(_fromUtf8("checkBox_72"))
         lista_check.append(self.checkBox_72)
-    		self.verticalLayout_16.addWidget(lista_check[35])
+        self.verticalLayout_16.addWidget(lista_check[35])
         
         self.groupBox_5 = QtGui.QGroupBox(InsperMatch)
         self.groupBox_5.setGeometry(QtCore.QRect(610, 180, 201, 311))
@@ -760,7 +760,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.verticalLayout_24.setMargin(0)
         self.verticalLayout_24.setObjectName(_fromUtf8("verticalLayout_24"))
        
-      	self.checkBox_115 = QtGui.QCheckBox(self.verticalLayoutWidget_24)
+        self.checkBox_115 = QtGui.QCheckBox(self.verticalLayoutWidget_24)
        # self.checkBox_115.setToolTipDuration(100000)
         self.checkBox_115.setObjectName(_fromUtf8("checkBox_115"))
         lista_check.append(self.checkBox_115)
@@ -802,7 +802,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.verticalLayout_24.addWidget(lista_check[59])
         
 
-        print  (lista_check)
+        #print  (lista_check)
         
         self.comboBox_3 = QtGui.QComboBox(InsperMatch)
         self.comboBox_3.setGeometry(QtCore.QRect(260, 150, 131, 22))
