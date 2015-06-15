@@ -7,15 +7,16 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from firebase import firebase
-from PyQt4 import QtCore, QtGui
-import sys
+from firebase import firebase # Importa o Firebase (Servidor/Banco de dados que armazena os usuários)
+from PyQt4 import QtCore, QtGui # Importa o Qt (Onde foi feito a interface gráfica do InsperMatch)
+import sys # Para rodar o programa (sys.exit(app.exec_()))
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
     def _fromUtf8(s):
         return s
-
+#Tradução do Qt design
+        
 try:
     _encoding = QtGui.QApplication.UnicodeUTF8
     def _translate(context, text, disambig):
@@ -23,9 +24,10 @@ try:
 except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
-
-class Ui_InsperMatch(QtGui.QWidget):
-    def __init__(self):
+#Tradução do Qt design
+        
+class Ui_InsperMatch(QtGui.QWidget): # Criando classe InsperMatch(User Interface)
+    def __init__(self): 
         QtGui.QWidget.__init__(self)
         self.lista_check = []
         self.setupUi(self)
@@ -169,7 +171,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.SolidPattern)
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ToolTipText, brush)
-        InsperMatch.setPalette(palette)
+        InsperMatch.setPalette(palette)#Para deixar a interface de cor vermelha
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(_fromUtf8("../../../Pictures/raposa atlética.jpg")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         InsperMatch.setWindowIcon(icon)
@@ -180,7 +182,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.horizontalLayout.setMargin(0)
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
         self.label_3 = QtGui.QLabel(self.horizontalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.QFont() # fonte do design
         font.setPointSize(12)
         self.label_3.setFont(font)
         self.label_3.setToolTip(_fromUtf8(""))
@@ -192,13 +194,13 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.label_3.setObjectName(_fromUtf8("label_3"))
         self.horizontalLayout.addWidget(self.label_3)
         self.radioButton_2 = QtGui.QRadioButton(self.horizontalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(12)
         self.radioButton_2.setFont(font)
         self.radioButton_2.setObjectName(_fromUtf8("radioButton_2"))
         self.horizontalLayout.addWidget(self.radioButton_2)
         self.radioButton = QtGui.QRadioButton(self.horizontalLayoutWidget)
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(12)
         self.radioButton.setFont(font)
         self.radioButton.setObjectName(_fromUtf8("radioButton"))
@@ -210,13 +212,13 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.horizontalLayout_2.setMargin(0)
         self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
         self.label_2 = QtGui.QLabel(self.horizontalLayoutWidget_2)
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(12)
         self.label_2.setFont(font)
         self.label_2.setObjectName(_fromUtf8("label_2"))
         self.horizontalLayout_2.addWidget(self.label_2)
         self.dateEdit = QtGui.QDateEdit(self.horizontalLayoutWidget_2)
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(12)
         self.dateEdit.setFont(font)
         self.dateEdit.setDateTime(QtCore.QDateTime(QtCore.QDate(1990, 1, 1), QtCore.QTime(0, 0, 0)))
@@ -229,20 +231,20 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.horizontalLayout_3.setMargin(0)
         self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
         self.label = QtGui.QLabel(self.horizontalLayoutWidget_3)
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(14)
         self.label.setFont(font)
         self.label.setObjectName(_fromUtf8("label"))
         self.horizontalLayout_3.addWidget(self.label)
         self.textEdit = QtGui.QTextEdit(self.horizontalLayoutWidget_3)
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(16)
         self.textEdit.setFont(font)
         self.textEdit.setObjectName(_fromUtf8("textEdit"))
         self.horizontalLayout_3.addWidget(self.textEdit)
         self.comboBox = QtGui.QComboBox(InsperMatch)
         self.comboBox.setGeometry(QtCore.QRect(10, 150, 161, 22))
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(12)
         self.comboBox.setFont(font)
         self.comboBox.setObjectName(_fromUtf8("comboBox"))
@@ -252,13 +254,13 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.comboBox.addItem(_fromUtf8(""))
         self.label_4 = QtGui.QLabel(InsperMatch)
         self.label_4.setGeometry(QtCore.QRect(10, 510, 81, 21))
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(12)
         self.label_4.setFont(font)
         self.label_4.setObjectName(_fromUtf8("label_4"))
         self.comboBox_2 = QtGui.QComboBox(InsperMatch)
         self.comboBox_2.setGeometry(QtCore.QRect(100, 510, 181, 22))
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(12)
         self.comboBox_2.setFont(font)
         self.comboBox_2.setObjectName(_fromUtf8("comboBox_2"))
@@ -352,9 +354,10 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.comboBox_2.addItem(_fromUtf8(""))
         self.comboBox_2.addItem(_fromUtf8(""))
         self.comboBox_2.addItem(_fromUtf8(""))
+        # comboBox ( ao clicar abre uma lista para baixo para você selecionar)
         self.pushButton = QtGui.QPushButton(InsperMatch)
         self.pushButton.setGeometry(QtCore.QRect(850, 510, 231, 31))
-        font = QtGui.QFont()
+        font = QtGui.QFont()# fonte do design
         font.setPointSize(14)
         self.pushButton.setFont(font)
         self.pushButton.setObjectName(_fromUtf8("pushButton"))
@@ -370,7 +373,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         
        
 
-        
+        #Criação dos checkboxes no Qt
         self.checkBox_12 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_12.setObjectName(_fromUtf8("checkBox_12"))
         self.lista_check.append(self.checkBox_12)
@@ -378,7 +381,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.verticalLayout_5.addWidget(self.lista_check[0])
         
                 
-                
+   # Todos checkbox estão na lista (lista_check) e tem uma posição- Exemplo: (self.lista_check[1])             
         
         self.checkBox_9 = QtGui.QCheckBox(self.verticalLayoutWidget_5)
         self.checkBox_9.setObjectName(_fromUtf8("checkBox_9"))
@@ -807,18 +810,18 @@ class Ui_InsperMatch(QtGui.QWidget):
         #print(self.lista_check)
         
         
-    def retranslateUi(self, InsperMatch):
-        InsperMatch.setWindowTitle(_translate("InsperMatch", "InsperMatch", None))
-        self.label_3.setText(_translate("InsperMatch", "Sexo:", None))
-        self.radioButton_2.setText(_translate("InsperMatch", "Masculino", None))
-        self.radioButton.setText(_translate("InsperMatch", "Feminino", None))
-        self.label_2.setText(_translate("InsperMatch", "Data de Nascimento:", None))
-        self.label.setText(_translate("InsperMatch", "Nome:", None))
-        self.comboBox.setItemText(0, _translate("InsperMatch", "Curso", None))
-        self.comboBox.setItemText(1, _translate("InsperMatch", "Engenharia", None))
-        self.comboBox.setItemText(2, _translate("InsperMatch", "Administração", None))
-        self.comboBox.setItemText(3, _translate("InsperMatch", "Economia", None))
-        self.label_4.setText(_translate("InsperMatch", "Endereço:", None))
+    def retranslateUi(self, InsperMatch): 
+        InsperMatch.setWindowTitle(_translate("InsperMatch", "InsperMatch", None)) # Nome da janela no Qt
+        self.label_3.setText(_translate("InsperMatch", "Sexo:", None))# Seleciona o Sexo (Masculino ou Feminino)
+        self.radioButton_2.setText(_translate("InsperMatch", "Masculino", None))# Seleciona o Sexo (Masculino)
+        self.radioButton.setText(_translate("InsperMatch", "Feminino", None))# Seleciona o Sexo (Feminino)
+        self.label_2.setText(_translate("InsperMatch", "Data de Nascimento:", None))# Seleciona a Data de Nascimento
+        self.label.setText(_translate("InsperMatch", "Nome:", None))# Escreve o Nome
+        self.comboBox.setItemText(0, _translate("InsperMatch", "Curso", None)) # Seleciona o Curso (Adm,Eco,Eng)
+        self.comboBox.setItemText(1, _translate("InsperMatch", "Engenharia", None))# Seleciona o Curso (Eng)
+        self.comboBox.setItemText(2, _translate("InsperMatch", "Administração", None))# Seleciona o Curso (Adm)
+        self.comboBox.setItemText(3, _translate("InsperMatch", "Economia", None))# Seleciona o Curso (Eco)
+        self.label_4.setText(_translate("InsperMatch", "Endereço:", None))# Seleciona o Endereço(comboBox com todos os Bairros de SP)
         self.comboBox_2.setItemText(0, _translate("InsperMatch", "Bairro", None))
         self.comboBox_2.setItemText(1, _translate("InsperMatch", "Água Rasa", None))
         self.comboBox_2.setItemText(2, _translate("InsperMatch", "Alto de Pinheiros", None))
@@ -909,8 +912,8 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.comboBox_2.setItemText(87, _translate("InsperMatch", "Vila Prudente", None))
         self.comboBox_2.setItemText(88, _translate("InsperMatch", "Vila Sônia", None))
         self.comboBox_2.setItemText(89, _translate("InsperMatch", "Outros", None))
-        self.pushButton.setText(_translate("InsperMatch", "Salvar", None))
-        self.groupBox_2.setTitle(_translate("InsperMatch", "Esportes", None))
+        self.pushButton.setText(_translate("InsperMatch", "Salvar", None)) # Nome do botão de Submit
+        self.groupBox_2.setTitle(_translate("InsperMatch", "Esportes", None)) # Nome da coluna de Esportes(Todos os checkbox de Esportes)
         self.checkBox_12.setText(_translate("InsperMatch", "Futebol", None))
         self.checkBox_9.setText(_translate("InsperMatch", "Futsal", None))
         self.checkBox_5.setText(_translate("InsperMatch", "Vôlei", None))
@@ -923,7 +926,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_16.setText(_translate("InsperMatch", "Tênis de Mesa", None))
         self.checkBox_17.setText(_translate("InsperMatch", "Tênis", None))
         self.checkBox_24.setText(_translate("InsperMatch", "Xadrez", None))
-        self.groupBox_3.setTitle(_translate("InsperMatch", "Preferências", None))
+        self.groupBox_3.setTitle(_translate("InsperMatch", "Preferências", None))# Nome da coluna de Preferências(Todos os checkbox de Preferências)
         self.checkBox_18.setText(_translate("InsperMatch", "Balada", None))
         self.checkBox_10.setText(_translate("InsperMatch", "Ler um Livro", None))
         self.checkBox_7.setText(_translate("InsperMatch", "Role no Shopping", None))
@@ -936,8 +939,8 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_23.setText(_translate("InsperMatch", "Bar", None))
         self.checkBox_25.setText(_translate("InsperMatch", "Cinema", None))
         self.checkBox_26.setText(_translate("InsperMatch", "Stand-Up", None))
-        self.groupBox_4.setTitle(_translate("InsperMatch", "Música", None))
-        self.checkBox_61.setText(_translate("InsperMatch", "Eletônica", None))
+        self.groupBox_4.setTitle(_translate("InsperMatch", "Música", None))# Nome da coluna de Música(Todos os checkbox de Música)
+        self.checkBox_61.setText(_translate("InsperMatch", "Eletrônica", None))
         self.checkBox_62.setText(_translate("InsperMatch", "Reggae", None))
         self.checkBox_63.setText(_translate("InsperMatch", "Rock", None))
         self.checkBox_64.setText(_translate("InsperMatch", "Rap", None))
@@ -962,7 +965,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_94.setText(_translate("InsperMatch", "Violino", None))
         self.checkBox_95.setText(_translate("InsperMatch", "Flauta", None))
         self.checkBox_96.setText(_translate("InsperMatch", "Ukulele", None))
-        self.groupBox_6.setTitle(_translate("InsperMatch", "Entidades", None))
+        self.groupBox_6.setTitle(_translate("InsperMatch", "Entidades", None))# Nome da coluna de Entidades(Todos os checkbox de Entidades)- Ao assar o Mouse no checkbox da entidade aparece um texto com a definição da entidade
         self.checkBox_109.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">A Bateria Imperial tem como objetivo contagiar os alunos do Insper, apoiar os atletas e cultivar o espírito de união dentro da faculdade. Fundada em 2009, sempre marca presença em competições  universitárias e torneios de baterias, além de participar de apresentações e eventos realizados pela faculdade ou por outras entidades estudantis.</span></p></body></html>", None))
         self.checkBox_109.setText(_translate("InsperMatch", "Bateria Imperial", None))
         self.checkBox_110.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#414042; background-color:#ffffff;\">O Insper Post, revista da faculdade produzido por nós estudantes, tem como objetivo ser um espaço para a disseminação de conteúdos, além de revelar o que acontece aqui dentro de acordo com a nossa visão. Também estimula o desenvolvimento da prática escrita e colabora para a formação intelectual de todos.</span></p></body></html>", None))
@@ -987,7 +990,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_119.setText(_translate("InsperMatch", "Atlética", None))
         self.checkBox_120.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000; background-color:#ffffff;\">Comandada pelos alunos do terceiro e quarto anos de graduação, a Insper Jr. Consulting</span><span style=\" font-family:\'Prelo-Book,Verdana\'; font-size:16px; font-weight:296; color:#000000;\"> presta serviços a diversos clientes, nas áreas de Administração e Economia. A criatividade das soluções apresentadas e o comprometimento com resultados são seus principais diferenciais.</span><br/></p></body></html>", None))
         self.checkBox_120.setText(_translate("InsperMatch", "Insper Jr", None))
-        self.comboBox_3.setItemText(0, _translate("InsperMatch", "Período", None))
+        self.comboBox_3.setItemText(0, _translate("InsperMatch", "Período", None))# Nome da coluna de Período(Todos os checkbox de Período)
         self.comboBox_3.setItemText(1, _translate("InsperMatch", "1", None))
         self.comboBox_3.setItemText(2, _translate("InsperMatch", "2", None))
         self.comboBox_3.setItemText(3, _translate("InsperMatch", "3", None))
@@ -999,11 +1002,11 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.comboBox_3.setItemText(9, _translate("InsperMatch", "9", None))
         self.comboBox_3.setItemText(10, _translate("InsperMatch", "10", None))
         self.label_6.setText(_translate("InsperMatch", "E-Mail:", None))
-        self.pushButton.clicked.connect(self.imprima)        
-        self.pushButton.clicked.connect(self.close)      
-    def imprima(self):
+        self.pushButton.clicked.connect(self.imprima) # O botão salvar funciona       
+        self.pushButton.clicked.connect(self.close)  # Ao apertar o salvar a janela é fechada    
+    def imprima(self): #Ao clicar o botão de salvar as informações selecionadas são enviadas para o firebase
      
-        self.firebase = firebase.FirebaseApplication('https://insper-match.firebaseio.com/', None)
+        self.firebase = firebase.FirebaseApplication('https://insper-match.firebaseio.com/', None)#Firebase do insper match
         new_user = self.textEdit.toPlainText()
         new_email = self.textEdit_2.toPlainText()
         radio1 = self.radioButton.text()
@@ -1020,21 +1023,21 @@ class Ui_InsperMatch(QtGui.QWidget):
         d = {}
         lista = []
         
-        for i in self.lista_check:
-            if i.checkState() != 0:
-                check = i.text()
-                lista.append(check)
-                d[new_user]=new_user,lista,new_email,combo,combo2,combo3,day1,month1,year1
+        for i in self.lista_check: #Percorre todos os checkbox
+            if i.checkState() != 0:#Certifica quais checkbox estão selecionados
+                check = i.text()#Imprime o texto do checkbox
+                lista.append(check)#adiciona os checkbox selecionados com seu nome em uma lista
+                d[new_user]=new_user,lista,new_email,combo,combo2,combo3,day1,month1,year1#Dicionário
                 
                 
         
-                if self.radioButton.isChecked() == True:
+                if self.radioButton.isChecked() == True:# Ver se o Masc e Fem estão selecionados
                     d[new_user]=new_user,lista,new_email,combo,combo2,combo3,radio1,day1,month1,year1
                 if self.radioButton_2.isChecked() == True:
                     d[new_user]=new_user,lista,new_email,combo,combo2,combo3,radio2,day1,month1,year1
         self.firebase.post('/cadastro', d[new_user])
         
-if __name__=="__main__":
+if __name__=="__main__": # Executa o programa
     app =QtGui.QApplication(sys.argv)
     win = Ui_InsperMatch()
     win.show()
@@ -1049,6 +1052,13 @@ if __name__=="__main__":
 import time
 firebase = firebase.FirebaseApplication('https://insper-match.firebaseio.com', None)
 result = firebase.get('/cadastro', None)
+Esporte = ["Futebol","Futsal","Vôlei","Handebol","Jiu-Jitsu","Judô","Rugby","Natação","Basquete","Tênis de Mesa","Tênis","Xadrez"]
+Preferência = ["Balada","Ler um Livro","Role no Shopping","Ficar em Casa","Soneca","Passear no Parque","Concerto","Teatro","Show","Bar","Cinema","Stand-Up"]
+Música = ["Eletrônica","Reggae","Rock","Rap","Sertanejo","Samba","Pagode","Clássica","Funk","Jazz","Forró","MPB"]
+Instrumentos = ["Percurssão","Saxofone","Violão","Gaita","Piano","Baixo","Banjo","Cavaquinho","Xilofone","Violino","Flauta","Ukulele"]
+Entidade= ["Bateria Imperial","Revista Insper Post","Liga de Enpreendendorismo","Sementes Culturais","Diretório Acâdemico","InFinance","AIESEC","Enactus","BemGasto","GAS","Atlética","Insper Jr"]
+esporte_ind = []
+
 for j in result.keys():
     abc = result[j]             #0 = nome
                                 #1 = check
@@ -1070,6 +1080,10 @@ for j in result.keys():
     
     print (abc[0], 'e-mail:',abc[2], 'curso:',abc[3], 'bairro:',abc[4],'periodo:',abc[5],'preferencias:',abc[1],'idade:',idade,'anos')
     
+    
+for q in abc[1]:
+    if q in Esporte:
+        esporte_ind.append(q)
+        print(esporte_ind) 
 
-
-                       
+                   
