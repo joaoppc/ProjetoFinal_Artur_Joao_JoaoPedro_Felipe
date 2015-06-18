@@ -1001,6 +1001,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.comboBox_3.setItemText(10, _translate("InsperMatch", "10", None))
         self.label_6.setText(_translate("InsperMatch", "E-Mail:", None))
         self.pushButton.clicked.connect(self.imprima)
+        self.pushButton.clicked.connect(self.close)
     def imprima(self):
         print(self.textEdit.toPlainText())
         print(self.textEdit_2.toPlainText())
@@ -1010,7 +1011,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         print(self.radioButton.checkStateSet())
         for i in self.lista_check:
             if i.checkState() != 0:
-                print('selecionated',i.text())
+                print('selecionado:',i.text())
         
        
 if __name__=="__main__":
