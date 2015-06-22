@@ -2604,7 +2604,7 @@ if __name__=="__main__":
     app =QtGui.QApplication(sys.argv)
     
     
-    splash_pix = QPixmap('fox_logo_by_designnerd-d5viyv7.png')
+    splash_pix = QPixmap('InsperMatch Madeira.png')
     splash = QSplashScreen(splash_pix, Qt.WindowStaysOnTopHint)
     splash.setMask(splash_pix.mask())
     splash.show()
