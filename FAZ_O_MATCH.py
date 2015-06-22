@@ -14,22 +14,35 @@ import collections
 
 firebase = firebase.FirebaseApplication('https://insper-match.firebaseio.com', None)
 result = firebase.get('/cadastro', None)# retorna um dícionario com os dados do firebase
-Esporte = ["Futebol","Futsal","Vôlei","Handebol","Jiu-Jitsu","Judô","Rugby","Natação","Basquete","Tênis de Mesa","Tênis","Xadrez"]
-Preferência = ["Balada","Ler um Livro","Role no Shopping","Ficar em Casa","Soneca","Passear no Parque","Concerto","Teatro","Show","Bar","Cinema","Stand-Up"]
+Esporte = ["Futebol","Futsal","Vôlei","Handebol","Jiu-Jitsu","Judô","Rugby","Natação","Basquete","Tênis de Mesa","Tênis","Xadrez","Futebol Americano","Poker","Hipismo","Surf","Golfe","Academia","Atletismo","Corrida de Aventura","Parkour","Badminton","Cricket","Squash","Polo Aquatico","Bocha","Pelota Basca","Esgrima","Skate","BMX","Boxe","Muay-Thai","Greco-Romana","Caratê","Kung-Fu","Capoeira","Krav-Maga","Arco e Flecha","Baseball","Montanhismo","Ciclismo","Sinuca","Ginastica","Automobilismo","Paraquedismo"]
+Preferência = ["Balada","Ler um Livro","Ir ao Shopping","Ficar em Casa","Tirar uma Soneca","Passear no Parque","Concerto","Teatro","Show","Bar","Cinema","Stand-Up Comedy","Cozinhar","Praia","Andar de Bicicleta","Estudar","Assistir Séries","Assistir Tv","Jogar \nVideo-Game","Ir ao Clube","Jogos de \nTabuleiro","Programar","Assistir Filmes","Assistir Animes","Festival","Arrumar a Casa","Jardinagem","Passear com o \nCachorro","Pintar","Viajar","Dançar"]
 Música = ["Eletrônica","Reggae","Rock","Rap","Sertanejo","Samba","Pagode","Clássica","Funk","Jazz","Forró","MPB"]
 Instrumentos = ["Percurssão","Saxofone","Violão","Gaita","Piano","Baixo","Banjo","Cavaquinho","Xilofone","Violino","Flauta","Ukulele"]
 Entidade= ["Bateria Imperial","Revista Insper Post","Liga de Enpreendendorismo","Sementes Culturais","Diretório Acâdemico","InFinance","AIESEC","Enactus","BemGasto","GAS","Atlética","Insper Jr"]
 indi={} # cria o dicionario indi
 count = 0# inicializa um contador
 new_result = {}
+
+for code in result.keys():
+    if result[code][2].endswith('\t'or'\n'):
+        result[code][2]=result[code][0][:-1]
+    
+    if result[code][0].endswith('\t'or'\n'):
+        result[code][0]=result[code][0][:-1]
 result=collections.OrderedDict(sorted(result.items(), key=lambda t: t[0])) # ordena o dicionario retornado pelo firebase
+
 for key, val in result.items():
+        
         new_result[val[0]] = [key,result[key]]
+        
+            
 new_result = collections.OrderedDict(sorted(new_result.items(), key=lambda t: t[0]))
 
 #print(new_result)
 #print(new_result['Artur'][1][1])
-filtro = input('selecione o nome' )
+filtro = input('selecione o nome: ' )
+filtro=filtro.title()
+
 ultimo = 'z' + filtro
 new_result[ultimo] = new_result.pop(filtro)
 for j in new_result.keys(): # loop for criado para percorrer todas as chaves do ficionario result, criado pelo firebase
@@ -95,59 +108,78 @@ else:
                             
                             matches.append(aluno1[0])# pega a lista matches e adiciona o nome do cadastrado 1
                             matches.append(aluno2[0])#pega a lista matches e adiciona o nome do cadastrado2
-                            if aluno1 not in alunos:
-                                alunos.append(aluno1)# cria uma lista com todos os alunos(usuarios)
-                            if aluno2 not in alunos:
-                                alunos.append(aluno2)
                             match[aluno1[0],aluno2[0]]=matches.count(aluno2[0])     #pega o dicionario match e em como chave utiliza aluno1 e o aluno2 como chaves e como valor utiliza quantas vezes o aluno 2 apareceu(match)
-                            match =result=collections.OrderedDict(sorted(match.items(), key=lambda t: t[0]))# ordena o dicionário match
+                            match =result=collections.OrderedDict(sorted(match.items(), key=lambda t: t[1]))# ordena o dicionário match
                             
                             #print(aluno1[0],' e ',aluno2[0],' tiveram ',matches.count(aluno2[0]),' matches ')       
-                            print(aluno1[0],aluno2[0],z,g)
-                            #print(z,g,aluno1,aluno2)
+                            #print(aluno1[0],aluno2[0],z,g)
+    #print(match)
     #print(aluno1[0],' e ',aluno2[0],' tiveram ',matches.count(aluno2[0]),' matches ')                        #print(matches)
                #print(y)
 porc=[]
-for t in range(1,len(alunos)):
+#print((match))
+for key in match.keys():
+    alunos.append(key) 
+for t in range(1,len(match)+1):
     porc.append( (match.popitem()[1]/ (len(abc[1][1])))*100)
-    
+#print(porc)    
+ 
+#print(alunos.pop()[1])
+if len(porc)>4:
+    n_groups = 5  
 
-n_groups = len(alunos)-1            #reproduz o gráfico de barras
+else:
+   
+   n_groups = len(alunos)           #reproduz o gráfico de barras
 #print(porc)
 
+if len(porc)>4:
+    means_men = (porc[0],porc[1],porc[2],porc[3],porc[4])    
 
-    
-means_men = (porc)
+else:
+    means_men = (porc)
 
-#std_men = (2, 3, 4)
-
-#means_women = (25, 32, 34, 20, 25)
-#std_women = (3, 5, 2, 3, 3)
 
 fig, ax = plt.subplots()
 
 index = np.arange(n_groups)
 bar_width = 0.1
-
+#print(index)
 opacity = 1
-#error_config = {'ecolor': '0.3'}
 
 rects1 = plt.bar(index, means_men, bar_width,
                  alpha=opacity,
-                 color='r',
+                 color='#b90000',
                  label=aluno1[0])
 
 
 
-plt.xlabel('Aluno')
-plt.ylabel('% afinidade')
+plt.xlabel('\n\nAlunos')
+plt.ylabel('\n% afinidade')
 plt.title('InsperMatch')
-num_label=[]
-for b in range(1,len(alunos)):
-        num_label.append(alunos[b][0])
-        plt.xticks((index + bar_width)-0.020*n_groups,num_label  )
 
+num_label=[]
+#num_label.append(alunos.pop[1])
+#plt.xticks((index + bar_width)-0.020*n_groups,num_label  )
+
+for b in range(len(alunos)):
+        num_label.append(alunos.pop()[1])
+        #print(num_label)
+if len(num_label)>4:
+            plt.xticks((index + bar_width)-0.05,num_label[:5]  )
+else:
+        
+            plt.xticks((index + bar_width),num_label  )
+       
 plt.legend()
 
 plt.tight_layout()
-plt.show()  
+for rect in rects1:
+        height = rect.get_height()
+        ax.text(rect.get_x()+rect.get_width()/2., 1.05*height, '%d'%int(height),
+                ha='center', va='bottom')
+plt.show()    
+        
+    
+        
+        
