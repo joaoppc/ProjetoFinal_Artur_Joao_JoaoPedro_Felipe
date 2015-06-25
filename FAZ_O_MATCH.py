@@ -15,10 +15,10 @@ import collections
 firebase = firebase.FirebaseApplication('https://insper-match.firebaseio.com', None)
 result = firebase.get('/cadastro', None)# retorna um dícionario com os dados do firebase
 Esporte = ["Futebol","Futsal","Vôlei","Handebol","Jiu-Jitsu","Judô","Rugby","Natação","Basquete","Tênis de Mesa","Tênis","Xadrez","Futebol Americano","Poker","Hipismo","Surf","Golfe","Academia","Atletismo","Corrida de Aventura","Parkour","Badminton","Cricket","Squash","Polo Aquatico","Bocha","Pelota Basca","Esgrima","Skate","BMX","Boxe","Muay-Thai","Greco-Romana","Caratê","Kung-Fu","Capoeira","Krav-Maga","Arco e Flecha","Baseball","Montanhismo","Ciclismo","Sinuca","Ginastica","Automobilismo","Paraquedismo"]
-Preferência = ["Balada","Ler um Livro","Ir ao Shopping","Ficar em Casa","Tirar uma Soneca","Passear no Parque","Concerto","Teatro","Show","Bar","Cinema","Stand-Up Comedy","Cozinhar","Praia","Andar de Bicicleta","Estudar","Assistir Séries","Assistir Tv","Jogar \nVideo-Game","Ir ao Clube","Jogos de \nTabuleiro","Programar","Assistir Filmes","Assistir Animes","Festival","Arrumar a Casa","Jardinagem","Passear com o \nCachorro","Pintar","Viajar","Dançar"]
+Preferência = ["Balada","Ler um Livro","Ir ao Shopping","Ficar em Casa","Tirar uma Soneca","Passear no Parque","Concerto","Teatro","Show","Bar","Cinema","Stand-Up Comedy","Cozinhar","Praia","Andar de Bicicleta","Estudar","Assistir Séries","Assistir Tv","Jogar \nVideo-Game","Ir ao Clube","Jogos de \nTabuleiro","Programar","Assistir Filmes","Assistir Animes","Festival","Arrumar a Casa","Jardinagem","Passear com o \nCachorro","Pintar","Viajar","Dançar","Fazenda","Ir ao \nZoológico","Frio","Calor","Piquenique","Ir ao Parque de \nDiversão","Museu","Cantar","Tocar em uma \nBanda","Pebolim","League of \nLegends","Sudoku","Palavras Cruzadas","Pescar","Cubo Magico","Escrever","Acampar","Praticas \nReligiosas","Paintball","Kart","Aeromodelismo","Magica","Editar Videos","Produzir \nMúsica","Jetski","Wakenboard","Trabalhos \nSociais","Cuidar de \nCrianças"]
 Música = ["Eletrônica","Reggae","Rock","Rap","Sertanejo","Samba","Pagode","Clássica","Funk","Jazz","Forró","MPB"]
 Instrumentos = ["Percurssão","Saxofone","Violão","Gaita","Piano","Baixo","Banjo","Cavaquinho","Xilofone","Violino","Flauta","Ukulele"]
-Entidade= ["Bateria Imperial","Revista Insper Post","Liga de Enpreendendorismo","Sementes Culturais","Diretório Acâdemico","InFinance","AIESEC","Enactus","BemGasto","GAS","Atlética","Insper Jr"]
+Entidade= ["Bateria \nImperial","Revista \nInsper Post","Liga de \nEmpreendedores","Sementes \nCulturais","Diretório Acâdemico","InFinance","AIESEC","Enactus","BemGasto","GAS","Atlética","Insper Jr"]
 indi={} # cria o dicionario indi
 count = 0# inicializa um contador
 new_result = {}
@@ -41,9 +41,10 @@ new_result = collections.OrderedDict(sorted(new_result.items(), key=lambda t: t[
 #print(new_result)
 #print(new_result['Artur'][1][1])
 filtro = input('selecione o nome: ' )
+filtro=filtro.lower()
 filtro=filtro.title()
 
-ultimo = 'z' + filtro
+ultimo = 'zz' + filtro
 new_result[ultimo] = new_result.pop(filtro)
 for j in new_result.keys(): # loop for criado para percorrer todas as chaves do ficionario result, criado pelo firebase
     esporte_ind=[] 
@@ -63,9 +64,9 @@ for j in new_result.keys(): # loop for criado para percorrer todas as chaves do 
                                 #8 = mes
                                 #9 = ano
     
-    if (int(time.strftime('%d'))) >= ((int(abc[1][7]))) and (int(time.strftime('%m'))) >= (int(abc[1][8])):#calcula a idade dos alunos
+    #if (int(time.strftime('%d'))) >= ((int(abc[1][7]))) and (int(time.strftime('%m'))) >= (int(abc[1][8])):#calcula a idade dos alunos
         
-        idade =   int(time.strftime('20%y'))-int(abc[1][9])   
+        #idade =   int(time.strftime('20%y'))-int(abc[1][9])   
     #else:
         #idade = (int(time.strftime('20%y'))-int(abc[9]))-1           #consertar bug!!!
         
@@ -178,8 +179,6 @@ for rect in rects1:
         height = rect.get_height()
         ax.text(rect.get_x()+rect.get_width()/2., 1.05*height, '%d'%int(height),
                 ha='center', va='bottom')
-plt.show()    
-        
-    
+plt.show()   
         
         

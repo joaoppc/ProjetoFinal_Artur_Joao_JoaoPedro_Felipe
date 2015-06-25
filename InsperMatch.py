@@ -7,6 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt4 import QtCore, QtGui
 from firebase import firebase
 import sys
@@ -1606,8 +1607,8 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.formLayoutWidget_4.setObjectName(_fromUtf8("formLayoutWidget_4"))
         self.formLayout_5 = QtGui.QFormLayout(self.formLayoutWidget_4)
         self.formLayout_5.setMargin(0)
-        self.formLayout_5.setHorizontalSpacing(35)
-        self.formLayout_5.setVerticalSpacing(11)
+        self.formLayout_5.setHorizontalSpacing(12)
+        self.formLayout_5.setVerticalSpacing(8)
         self.formLayout_5.setObjectName(_fromUtf8("formLayout_5"))
         self.checkBox_91 = QtGui.QCheckBox(self.formLayoutWidget_4)
         self.checkBox_91.setObjectName(_fromUtf8("checkBox_91"))
@@ -2144,70 +2145,12 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.period_2.addItem(_fromUtf8(""))
         self.period_2.addItem(_fromUtf8(""))
         self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
-        self.period_2.addItem(_fromUtf8(""))
+
+
+
         self.verticalLayout_6.addWidget(self.period_2)
         self.pushButton_2 = QtGui.QPushButton(InsperMatch)
-        self.pushButton_2.setGeometry(QtCore.QRect(990, 221, 155, 41))
+        self.pushButton_2.setGeometry(QtCore.QRect(999, 221, 155, 41))
         self.pushButton = QtGui.QPushButton(InsperMatch)
         self.pushButton.setGeometry(QtCore.QRect(1000, 220, 155, 41))
         font = QtGui.QFont()
@@ -2276,20 +2219,20 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_43.setText(_translate("InsperMatch", "Sinuca", None))
         self.checkBox_44.setText(_translate("InsperMatch", "Ginastica", None))
         self.checkBox_45.setText(_translate("InsperMatch", "Automobilismo", None))
-        self.groupBox_2.setTitle(_translate("InsperMatch", "Preferências", None))
+        self.groupBox_2.setTitle(_translate("InsperMatch", "Gosto", None))
         self.checkBox_61.setText(_translate("InsperMatch", "Balada", None))
         self.checkBox_62.setText(_translate("InsperMatch", "Ler um livro", None))
         self.checkBox_63.setText(_translate("InsperMatch", "Ir ao Shopping", None))
         self.checkBox_64.setText(_translate("InsperMatch", "Ficar em Casa", None))
         self.checkBox_65.setText(_translate("InsperMatch", "Tirar uma Soneca", None))
-        self.checkBox_66.setText(_translate("InsperMatch", "Passear no Parque", None))
+        self.checkBox_66.setText(_translate("InsperMatch", "League of \nLegends", None))
         self.checkBox_67.setText(_translate("InsperMatch", "Concerto", None))
         self.checkBox_68.setText(_translate("InsperMatch", "Teatro", None))
         self.checkBox_69.setText(_translate("InsperMatch", "Show", None))
-        self.checkBox_70.setText(_translate("InsperMatch", "Bar", None))
+        self.checkBox_70.setText(_translate("InsperMatch", "Passear no Parque", None))
         self.checkBox_71.setText(_translate("InsperMatch", "Stand-up Comedy", None))
         self.checkBox_72.setText(_translate("InsperMatch", "Cozinhar", None))
-        self.checkBox_73.setText(_translate("InsperMatch", "Praia", None))
+        self.checkBox_73.setText(_translate("InsperMatch", "Palavras \nCruzadas", None))
         self.checkBox_74.setText(_translate("InsperMatch", "Andar de Bicicleta", None))
         self.checkBox_75.setText(_translate("InsperMatch", "Estudar", None))
         self.checkBox_76.setText(_translate("InsperMatch", "Assistir Séries", None))
@@ -2306,40 +2249,39 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_85.setText(_translate("InsperMatch", "Festival", None))
         self.checkBox_86.setText(_translate("InsperMatch", "Arrumar a Casa", None))
         self.checkBox_87.setText(_translate("InsperMatch", "Jardinagem", None))
-        self.checkBox_88.setText(_translate("InsperMatch", "Passear com o \n"
-"Cachorro", None))
+        self.checkBox_88.setText(_translate("InsperMatch", "Passear com o \nCachorro", None))
         self.checkBox_89.setText(_translate("InsperMatch", "Pintar", None))
         self.checkBox_90.setText(_translate("InsperMatch", "Viajar", None))
         self.checkBox_91.setText(_translate("InsperMatch", "Dançar", None))
         self.checkBox_92.setText(_translate("InsperMatch", "Cinema", None))
-        self.checkBox_93.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_94.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_95.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_96.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_97.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_98.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_99.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_100.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_101.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_102.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_103.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_104.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_105.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_106.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_107.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_108.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_109.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_110.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_111.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_112.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_113.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_114.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_115.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_116.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_117.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_118.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_119.setText(_translate("InsperMatch", "CheckBox", None))
-        self.checkBox_120.setText(_translate("InsperMatch", "CheckBox", None))
+        self.checkBox_93.setText(_translate("InsperMatch", "Fazenda", None))
+        self.checkBox_94.setText(_translate("InsperMatch", "Ir ao \nZoológico", None))
+        self.checkBox_95.setText(_translate("InsperMatch", "Frio", None))
+        self.checkBox_96.setText(_translate("InsperMatch", "Calor", None))
+        self.checkBox_97.setText(_translate("InsperMatch", "Piquenique", None))
+        self.checkBox_98.setText(_translate("InsperMatch", "Ir ao Parque de\nDiversão", None))
+        self.checkBox_99.setText(_translate("InsperMatch", "Museu", None))
+        self.checkBox_100.setText(_translate("InsperMatch", "Cantar", None))
+        self.checkBox_101.setText(_translate("InsperMatch", "Tocar em uma\nBanda", None))
+        self.checkBox_102.setText(_translate("InsperMatch", "Pebolim", None))
+        self.checkBox_103.setText(_translate("InsperMatch", "Bar", None))
+        self.checkBox_104.setText(_translate("InsperMatch", "Sudoku", None))
+        self.checkBox_105.setText(_translate("InsperMatch", "Praia", None))
+        self.checkBox_106.setText(_translate("InsperMatch", "Pescar", None))
+        self.checkBox_107.setText(_translate("InsperMatch", "Cubo \nMagico", None))
+        self.checkBox_108.setText(_translate("InsperMatch", "Escrever", None))
+        self.checkBox_109.setText(_translate("InsperMatch", "Acampar", None))
+        self.checkBox_110.setText(_translate("InsperMatch", "Praticas \nReligiosas", None))
+        self.checkBox_111.setText(_translate("InsperMatch", "Paintball", None))
+        self.checkBox_112.setText(_translate("InsperMatch", "Kart", None))
+        self.checkBox_113.setText(_translate("InsperMatch", "Aeromodelismo", None))
+        self.checkBox_114.setText(_translate("InsperMatch", "Magica", None))
+        self.checkBox_115.setText(_translate("InsperMatch", "Editar Videos", None))
+        self.checkBox_116.setText(_translate("InsperMatch", "Produzir \nMúsica", None))
+        self.checkBox_117.setText(_translate("InsperMatch", "Jetski", None))
+        self.checkBox_118.setText(_translate("InsperMatch", "Wakenboard", None))
+        self.checkBox_119.setText(_translate("InsperMatch", "Trabalhos \nSociais", None))
+        self.checkBox_120.setText(_translate("InsperMatch", "Cuidar de \nCrianças", None))
         self.email_adress.setPlaceholderText(_translate("InsperMatch", "Endereço de e-mail", None))
         self.ddd.setPlaceholderText(_translate("InsperMatch", "DDD", None))
         self.phone_number.setPlaceholderText(_translate("InsperMatch", "Número do celular", None))
@@ -2359,7 +2301,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.period.setItemText(9, _translate("InsperMatch", "9", None))
         self.period.setItemText(10, _translate("InsperMatch", "10", None))
         self.groupBox_3.setTitle(_translate("InsperMatch", "Música", None))
-        self.checkBox_121.setText(_translate("InsperMatch", "Eletônica", None))
+        self.checkBox_121.setText(_translate("InsperMatch", "Eletrônica", None))
         self.checkBox_136.setText(_translate("InsperMatch", "Pagode", None))
         self.checkBox_122.setText(_translate("InsperMatch", "Reggae", None))
         self.checkBox_137.setText(_translate("InsperMatch", "Clássica", None))
@@ -2418,7 +2360,6 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.checkBox_155.setText(_translate("InsperMatch", "InFinance", None))
         self.checkBox_156.setToolTip(_translate("InsperMatch", "<html><head/><body><p><span style=\" font-family:\'Verdana,sans-serif\'; font-size:11pt; color:#000000; \">Comandada pelos alunos do terceiro e quarto anos de graduação, a Insper Jr. Consulting presta serviços a diversos clientes, nas áreas de Administração e Economia. A criatividade das soluções apresentadas e o comprometimento com resultados são seus principais diferenciais.</span></p></body></html>", None))
         self.checkBox_156.setText(_translate("InsperMatch", "Insper Jr.", None))
-                
         self.period_2.setItemText(0, _translate("InsperMatch", "Bairro", None))
         self.period_2.setItemText(1, _translate("InsperMatch", "Água Rasa ", None))
         self.period_2.setItemText(2, _translate("InsperMatch", "Alto de Pinheiros", None))
@@ -2526,7 +2467,7 @@ class Ui_InsperMatch(QtGui.QWidget):
         else:
             pass
     def imprima(self):
-        splash_pix = QPixmap('splash_loading.png')
+        splash_pix = QPixmap('loading.png')
         splash = QSplashScreen(splash_pix, Qt.WindowStaysOnTopHint)
         splash.setMask(splash_pix.mask())
         splash.show()
@@ -2558,8 +2499,7 @@ class Ui_InsperMatch(QtGui.QWidget):
              
         
         telefone_completo = '({0}){1}-{2}'.format(prefixo,telefone[:5],telefone[5:9])
-        send='nome:{0} \n\nE-mail:{1} \n\nCurso:{2} \n\nPeriodo:{3} \n\nTelefone para contato:{4}'.format(new_user,new_email,combo,combo2,telefone_completo)
-        print(telefone_completo)
+        #print(telefone_completo)
         d = {}
         lista = []
         
@@ -2579,13 +2519,121 @@ class Ui_InsperMatch(QtGui.QWidget):
         self.firebase.post('/cadastro', d[new_user])
         
         
+        if 'ã'  in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('ã')] = 'a'
+           
+        else:
+            pass
+        if 'ã' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('ã')] = 'a'
+           
+        else:
+            pass
+        if 'ã' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('ã')] = 'a'
+            
+        else:
+            pass
+        if 'ã' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('ã')] = 'a'
+            
+        else:
+            pass
+        if 'õ' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('õ')] = 'o'
+            
+        else:
+            pass
+        if 'õ' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('õ')] = 'o'
+            
+        else:
+            pass
+        if 'õ' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('õ')] = 'o'
+            
+        else:
+            pass
+        if 'á' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('á')] = 'a'
+            
+        else:
+            pass
+        if 'é' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('é')] = 'e'
+           
+        else:
+            pass
+        if 'í' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('í')] = 'i'
+            
+        else:
+            pass
+        if 'ó' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('ó')] = 'o'
+            
+        else:
+            pass
+        if 'ú' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('ú')] = 'u'
+           
+        else:
+            pass
+        if 'â' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('â')] = 'a'
+          
+        else:
+            pass
+        if 'ç' in new_user:
+            new_user= list(new_user)
+            new_user[new_user.index('ç')] = 'c'
+           
+        else:
+            pass
+        g = ''
+        for f in new_user:
+            g = g + f
+
+        new_user = g
+        
+        if 'ã' in combo:
+            combo= list(combo)
+            combo[combo.index('ã')] = 'a'
+           
+        else:
+            pass
+        if 'ç' in combo:
+            combo= list(combo)
+            combo[combo.index('ç')] = 'c'
+           
+        else:
+            pass
+        p=''
+        for w in combo:
+            p = p + w
+        combo = p
+        
+        send='nome:{0} \n\nE-mail:{1} \n\nCurso:{2} \n\nPeriodo:{3} \n\nTelefone para Contato:{4}'.format(new_user,new_email,combo,combo2,telefone_completo)
         
         fromaddr = 'jppc9292@gmail.com'
         toaddrs  = 'jppc9292@gmail.com'
         msg = "\r\n".join([
         "From: jppc9292@gmail.com",
         "To: jppc9292@gmail.com",
-        "Subject: telefone aluno interessado",
+        "Subject: Contato aluno interessado",
         "",send
   ])
         username = 'jppc9292@gmail.com'
@@ -2604,7 +2652,7 @@ if __name__=="__main__":
     app =QtGui.QApplication(sys.argv)
     
     
-    splash_pix = QPixmap('InsperMatch Madeira.png')
+    splash_pix = QPixmap('11640458_1004159329625059_363144276_o.png')
     splash = QSplashScreen(splash_pix, Qt.WindowStaysOnTopHint)
     splash.setMask(splash_pix.mask())
     splash.show()
